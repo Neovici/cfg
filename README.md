@@ -1,6 +1,9 @@
 # nix
 Nix for Neovici frontend development
 
+# flakes
+See https://nixos.wiki/wiki/Flakes
+
 # usage
 ```
 # basic shell
