@@ -8,12 +8,12 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        node = pkgs.nodejs-14_x;
+        deps = with pkgs; [ nodejs-14_x python ];
       in
       rec {
         packages = flake-utils.lib.flattenTree (with pkgs;  rec {
           devShell = mkShell {
-            buildInputs = [ node ];
+            buildInputs = deps;
             shellHook = ''
               export PATH=$(npm bin):$PATH
               export NIXPKGS_ALLOW_UNFREE=1
@@ -28,7 +28,7 @@
             '';
           };
           testShell = mkShell {
-            buildInputs = [ node firefox google-chrome geckodriver ];
+            buildInputs = deps ++ [ firefox google-chrome geckodriver ];
           };
         });
         defaultPackage = packages.devShell;
