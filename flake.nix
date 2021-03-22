@@ -8,7 +8,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs-14_x python ];
+        deps = with pkgs; [ nodejs-14_x python git ];
       in
       rec {
         packages = flake-utils.lib.flattenTree (with pkgs;  rec {
@@ -25,6 +25,7 @@
                   neww -n kak \; send "kak" C-m \; \
                   selectw -t 1\; selectp -t 1 \;
               }
+              source ${pkgs.git}/share/bash-completion/completions/git
             '';
           };
           testShell = mkShell {
