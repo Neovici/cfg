@@ -31,6 +31,25 @@
           testShell = mkShell {
             buildInputs = deps ++ [ firefox google-chrome geckodriver ];
           };
+          acceptanceEnv = buildFHSUserEnv {
+            name = "acceptance";
+            targetPkgs = pkgs: (with pkgs; deps ++ [
+              jre
+              firefox
+              google-chrome
+              # chromedriver
+              glib
+              nspr
+              nss
+              xorg.libX11
+              xorg.libxcb
+            ]);
+            extraBuildCommands = ''
+              chmod +w usr/bin
+              ln -sr usr/bin/google-chrome-stable usr/bin/google-chrome
+            '';
+            runScript= "npm run";
+          };
         });
         defaultPackage = packages.devShell;
       }
