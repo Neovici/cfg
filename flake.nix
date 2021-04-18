@@ -8,7 +8,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs-14_x python git ];
+        deps = with pkgs; [ nodejs python git ];
       in
       rec {
         packages = flake-utils.lib.flattenTree (with pkgs;  rec {
