@@ -8,14 +8,14 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs python git ];
+        deps = with pkgs; [ nodejs-slim nodePackages.npm  python git ];
       in
       rec {
         packages = flake-utils.lib.flattenTree (with pkgs;  rec {
           devShell = mkShell {
             buildInputs = deps;
             shellHook = ''
-              export PATH=$(npm bin):$PATH
+              export PATH=$PATH:$(npm bin)
               export NIXPKGS_ALLOW_UNFREE=1
               tmux-ui() {
                 PROJECT=$(basename $(pwd))
