@@ -8,7 +8,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs-slim nodePackages.npm  python git ];
+        deps = with pkgs; [ nodejs-slim nodePackages.npm python ];
       in
       rec {
         packages = flake-utils.lib.flattenTree (with pkgs;  rec {
@@ -17,6 +17,7 @@
             shellHook = ''
               export PATH=$PATH:$(npm bin)
               export NIXPKGS_ALLOW_UNFREE=1
+              export XDG_DATA_DIRS=$XDG_DATA_DIRS:/etc/profiles/per-user/$USER/share
               tmux-ui() {
                 PROJECT=$(basename $(pwd))
                 tmux at -t $PROJECT || SHELL=bash tmux new -s $PROJECT -n term \; \
@@ -25,7 +26,6 @@
                   neww -n kak \; send "kak" C-m \; \
                   selectw -t 1\; selectp -t 1 \;
               }
-              source ${pkgs.git}/share/bash-completion/completions/git
             '';
           };
           testShell = mkShell {
