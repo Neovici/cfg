@@ -13,6 +13,7 @@
           export PATH=$PATH:$(npm bin)
           export NIXPKGS_ALLOW_UNFREE=1
           export XDG_DATA_DIRS=$XDG_DATA_DIRS:/etc/profiles/per-user/$USER/share
+          export SHELL=${pkgs.bashInteractive}/bin/bash
         '';
       in
       rec {
@@ -23,7 +24,7 @@
               ${env}
               tmux-ui() {
                 PROJECT=$(basename $(pwd))
-                tmux at -t $PROJECT || SHELL=bash tmux new -s $PROJECT -n term \; \
+                tmux at -t $PROJECT || tmux new -s $PROJECT -n term \; \
                   send "npm ci" C-m \; splitw -v -p 50 \; \
                   neww -n tig \; send "tig" C-m \; \
                   neww -n kak \; send "kak" C-m \; \
