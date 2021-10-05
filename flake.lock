@@ -17,18 +17,14 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1632660378,
-        "narHash": "sha256-sjA8eQlnyDjDLyAyq3XlJmN0nqW0ftl/pb7VnMg86L0=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "31ffc50c571e6683e9ecc9dbcbd4a8e9914b4497",
-        "type": "github"
+        "lastModified": 1633263894,
+        "narHash": "sha256-Q2AyYzX66zoe2kYY3OY622V2BnGOThGbeV3CTZxWNo8=",
+        "type": "git",
+        "url": "file:///home/iulian/Projects/neovici/nixpkgs"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/iulian/Projects/neovici/nixpkgs"
       }
     },
     "root": {
