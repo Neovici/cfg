@@ -3,8 +3,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    android.url = "github:tadfisher/android-nixpkgs";
+    android.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, android }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
@@ -37,11 +39,31 @@
               buildInputs = deps ++ [ firefox google-chrome geckodriver ];
             };
 
-            androidShell = mkShell rec {
-              packages = [ jdk8 android-studio ];
-              JAVA_HOME = jdk8.home;
-              _JAVA_AWT_WM_NONREPARENTING = 1;
-            };
+            androidShell =
+              let
+                android-sdk = android.sdk.${system} (sdkPkgs: with sdkPkgs; [
+                  cmdline-tools-latest
+                  build-tools-30-0-2
+                  platform-tools
+                  platforms-android-30
+                  system-images-android-30-google-apis-x86-64
+                  emulator
+                ]);
+              in
+              mkShell rec {
+                packages = [ jdk android-sdk android-studio ];
+                JAVA_HOME=jdk.home;
+                _JAVA_AWT_WM_NONREPARENTING = 1;
+                shellHook = ''
+                  acap() {
+                    GRADLE_OPTS="\
+                      -Dorg.gradle.jvmargs=-Xmx1536M --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED \
+                        --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED \
+                      -Dorg.gradle.project.android.aapt2FromMavenOverride=$(realpath $ANDROID_SDK_ROOT/build-tools/*/aapt2)" \
+                    npx cap $@
+                  }
+                '';
+              };
 
             patch-playwright = writeShellScriptBin "patch-playwright" ''
               path=''${1:-~/.cache/ms-playwright}
