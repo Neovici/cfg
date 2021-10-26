@@ -56,11 +56,7 @@
                 _JAVA_AWT_WM_NONREPARENTING = 1;
                 shellHook = ''
                   acap() {
-                    GRADLE_OPTS="\
-                      -Dorg.gradle.jvmargs=-Xmx1536M --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED \
-                        --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED \
-                      -Dorg.gradle.project.android.aapt2FromMavenOverride=$(realpath $ANDROID_SDK_ROOT/build-tools/*/aapt2)" \
-                    npx cap $@
+                    GRADLE_OPTS="-Dorg.gradle.project.android.aapt2FromMavenOverride=$(realpath $ANDROID_SDK_ROOT/build-tools/*/aapt2)" npx cap $@
                   }
                 '';
               };
