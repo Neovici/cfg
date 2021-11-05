@@ -43,9 +43,9 @@
               let
                 android-sdk = android.sdk.${system} (sdkPkgs: with sdkPkgs; [
                   cmdline-tools-latest
-                  build-tools-31-0-0
+                  build-tools-30-0-2
                   platform-tools
-                  platforms-android-31
+                  platforms-android-30
                   system-images-android-31-google-apis-x86-64
                   emulator
                 ]);
