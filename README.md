@@ -1,10 +1,10 @@
-# nix
-Nix for Neovici frontend development
+# cfg
+Neovici frontend development configuration
 
-# flakes
+# nix flakes
 See https://nixos.wiki/wiki/Flakes
 
-# usage
+## usage
 ```
 # basic shell
 nix develop github:Neovici/nix
