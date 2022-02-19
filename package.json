@@ -1,0 +1,62 @@
+{
+  "name": "@neovici/cfg",
+  "version": "1.0.0",
+  "description": "Configuration for Neovici packages",
+  "homepage": "https://github.com/Neovici/cfg#readme",
+  "bugs": {
+    "url": "https://github.com/Neovici/cfg/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neovici/cfg.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Neovici dev",
+  "main": "index.js",
+  "files": [
+    "eslint/*.js"
+  ],
+  "scripts": {
+    "test": "eslint eslint/*.js"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-mocha": "^9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^14.0.0",
+    "@commitlint/config-conventional": "^14.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "husky": "^4.3.0",
+    "semantic-release": "^18.0.0"
+  }
+}
