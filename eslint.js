@@ -213,5 +213,11 @@ module.exports = {
 		'switch-colon-spacing': 'error',
 		'template-curly-spacing': ['error', 'always'],
 		'valid-jsdoc': 'error'
-	}
+	},
+	overrides: [
+		{
+			files: ['**/*.test.js'],
+			extends: '@neovici/cfg/eslint-test'
+		}
+	]
 };

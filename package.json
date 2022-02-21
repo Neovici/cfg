@@ -12,12 +12,12 @@
   },
   "license": "Apache-2.0",
   "author": "Neovici dev",
-  "main": "eslint/index.js",
+  "main": "index.js",
   "files": [
-    "eslint/*.js"
+    "*.js"
   ],
   "scripts": {
-    "test": "eslint eslint/*.js"
+    "test": "eslint *.js"
   },
   "release": {
     "plugins": [
