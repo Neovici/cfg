@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Neovici/cfg/compare/v1.6.0...v1.7.0) (2022-02-21)
+
+
+### Features
+
+* **deps:** upgrade ([21f78dc](https://github.com/Neovici/cfg/commit/21f78dca28ef07482973034c41a383314180e2e8))
+
 # [1.6.0](https://github.com/Neovici/cfg/compare/v1.5.0...v1.6.0) (2022-02-21)
 
 
