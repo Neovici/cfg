@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Neovici/cfg/compare/v1.4.0...v1.5.0) (2022-02-21)
+
+
+### Features
+
+* integrate prettier and eslint ([910d609](https://github.com/Neovici/cfg/commit/910d609964bc3f1bd4a8b4b15e7e1b9bed2b8019))
+
 # [1.4.0](https://github.com/Neovici/cfg/compare/v1.3.0...v1.4.0) (2022-02-21)
 
 
