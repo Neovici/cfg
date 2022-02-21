@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Neovici/cfg/compare/v1.5.0...v1.6.0) (2022-02-21)
+
+
+### Features
+
+* **eslint:** disable prettier conflicting rules ([238d07b](https://github.com/Neovici/cfg/commit/238d07bd5f04f545640dcbb44585a51c2eb73e0c))
+
 # [1.5.0](https://github.com/Neovici/cfg/compare/v1.4.0...v1.5.0) (2022-02-21)
 
 
