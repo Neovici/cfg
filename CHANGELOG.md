@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/Neovici/cfg/compare/v1.0.1...v1.1.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* **eslint:** test config ([ac8646c](https://github.com/Neovici/cfg/commit/ac8646c1f336b5dff55abc15cffce4d9b7bfbc70))
+
+
+### Features
+
+* **eslint:** add test config override ([830fb50](https://github.com/Neovici/cfg/commit/830fb5061962353e269a55b2a89b0d4a5abfa3e3))
+* **eslint:** move config ([4245362](https://github.com/Neovici/cfg/commit/42453620a85e334eb4181f2e46ebfb3bb67ee476))
+
 ## [1.0.1](https://github.com/Neovici/cfg/compare/v1.0.0...v1.0.1) (2022-02-21)
 
 
