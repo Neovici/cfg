@@ -14,10 +14,12 @@
   "author": "Neovici dev",
   "main": "index.js",
   "files": [
+    "eslint/*.js",
     "*.js"
   ],
   "scripts": {
-    "test": "eslint *.js"
+    "test:eslint": "eslint *.js eslint/*.js",
+    "test": "npm run test:eslint"
   },
   "release": {
     "plugins": [

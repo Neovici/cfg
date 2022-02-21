@@ -217,7 +217,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ['**/*.test.js'],
-			extends: './eslint-test'
+			extends: './test'
 		}
 	]
 };
