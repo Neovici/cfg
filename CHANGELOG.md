@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Neovici/cfg/compare/v1.3.0...v1.4.0) (2022-02-21)
+
+
+### Features
+
+* **prettier:** config ([1b9dd01](https://github.com/Neovici/cfg/commit/1b9dd01964d4efb9572796acbde120a013c92246))
+
 # [1.3.0](https://github.com/Neovici/cfg/compare/v1.2.0...v1.3.0) (2022-02-21)
 
 
