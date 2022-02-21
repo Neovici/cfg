@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Neovici/cfg/compare/v1.1.0...v1.2.0) (2022-02-21)
+
+
+### Features
+
+* **eslint:** refactor config ([3c3ac34](https://github.com/Neovici/cfg/commit/3c3ac349dc37db693538b2d5e7b841c0e2281c88))
+
 # [1.1.0](https://github.com/Neovici/cfg/compare/v1.0.1...v1.1.0) (2022-02-21)
 
 
