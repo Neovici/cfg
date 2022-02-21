@@ -217,7 +217,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ['**/*.test.js'],
-			extends: '@neovici/cfg/eslint-test'
+			extends: './eslint-test'
 		}
 	]
 };
