@@ -3,7 +3,7 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	extends: ['eslint:recommended', 'plugin:import/recommended'],
+	extends: ['eslint:recommended', 'plugin:import/recommended', 'prettier'],
 	plugins: ['html'],
 	parser: '@babel/eslint-parser', // so dynamic `import` is recognized
 	parserOptions: {
