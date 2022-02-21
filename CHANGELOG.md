@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Neovici/cfg/compare/v1.0.0...v1.0.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* package updates ([6fdc3b8](https://github.com/Neovici/cfg/commit/6fdc3b86aaa8146125991cf3a65f7b68bfe38033))
+
 # 1.0.0 (2022-02-21)
 
 
