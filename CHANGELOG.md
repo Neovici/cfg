@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/Neovici/cfg/compare/v1.7.1...v1.8.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* update test-runner config ([9f4249f](https://github.com/Neovici/cfg/commit/9f4249fc9589b2982ff170304de9d10cdd1d115b))
+
+
+### Features
+
+* unit test config with playwright ([aab8a72](https://github.com/Neovici/cfg/commit/aab8a72049b7ffb82473ef9ca93a2c307bc07789))
+
 ## [1.7.1](https://github.com/Neovici/cfg/compare/v1.7.0...v1.7.1) (2022-02-28)
 
 
