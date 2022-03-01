@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/Neovici/cfg/compare/v1.12.1...v1.12.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* **node-enhanced:** fix ([41281ad](https://github.com/Neovici/cfg/commit/41281add49c22cf14d241ba73c92ad82d9d696f6))
+
 ## [1.12.1](https://github.com/Neovici/cfg/compare/v1.12.0...v1.12.1) (2022-03-01)
 
 
