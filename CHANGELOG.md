@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Neovici/cfg/compare/v1.9.0...v1.10.0) (2022-03-01)
+
+
+### Features
+
+* rename test runner config ([a0bc61f](https://github.com/Neovici/cfg/commit/a0bc61f6e6ab6c846315798bd3a11c86298ec1ff))
+
 # [1.9.0](https://github.com/Neovici/cfg/compare/v1.8.2...v1.9.0) (2022-03-01)
 
 
