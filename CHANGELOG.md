@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/Neovici/cfg/compare/v1.12.2...v1.13.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* **chore:** lint ([3c5285a](https://github.com/Neovici/cfg/commit/3c5285a782f9cf6f8bcae6e137245501ddb20ec6))
+
+
+### Features
+
+* **eslint:** remove custom resolver ([2d519ac](https://github.com/Neovici/cfg/commit/2d519ac6cee784e912c4006c0f0cf38991d22413))
+
 ## [1.12.2](https://github.com/Neovici/cfg/compare/v1.12.1...v1.12.2) (2022-03-01)
 
 
