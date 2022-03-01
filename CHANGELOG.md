@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Neovici/cfg/compare/v1.8.2...v1.9.0) (2022-03-01)
+
+
+### Features
+
+* update deps ([d767491](https://github.com/Neovici/cfg/commit/d767491db0fdcea4d7c351b01a29951ee11fd3b2))
+
 ## [1.8.2](https://github.com/Neovici/cfg/compare/v1.8.1...v1.8.2) (2022-03-01)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@neovici/cfg",
-  "version": "1.8.2",
+  "version": "1.9.0",
   "description": "Configuration for Neovici packages",
   "homepage": "https://github.com/Neovici/cfg#readme",
   "bugs": {
