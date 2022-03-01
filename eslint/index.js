@@ -135,10 +135,5 @@ module.exports = {
 			files: ['**/*.test.js'],
 			extends: './test'
 		}
-	],
-	settings: {
-		'import/resolver': {
-			[path.resolve(__dirname, 'node-enhanced.js')]: {},
-		}
-  }
+	]
 };
