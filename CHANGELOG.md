@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/Neovici/cfg/compare/v1.8.0...v1.8.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* export web files ([9bda421](https://github.com/Neovici/cfg/commit/9bda42164f83e31059e80e66c736d1f6b06408e2))
+
 # [1.8.0](https://github.com/Neovici/cfg/compare/v1.7.1...v1.8.0) (2022-03-01)
 
 
