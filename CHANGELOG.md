@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/Neovici/cfg/compare/v1.12.0...v1.12.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* **eslint:** import node-enhanced correctly ([41a9257](https://github.com/Neovici/cfg/commit/41a9257260e8b81bd409a6fce488e7b7cc8e194a))
+
 # [1.12.0](https://github.com/Neovici/cfg/compare/v1.11.1...v1.12.0) (2022-03-01)
 
 
