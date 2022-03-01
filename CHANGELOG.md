@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/Neovici/cfg/compare/v1.11.0...v1.11.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* **eslint:** add aliases support ([6e9ce52](https://github.com/Neovici/cfg/commit/6e9ce529b0165ca538137d3aefb17648fb3fe9cf))
+
 # [1.11.0](https://github.com/Neovici/cfg/compare/v1.10.0...v1.11.0) (2022-03-01)
 
 
