@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/Neovici/cfg/compare/v1.10.0...v1.11.0) (2022-03-01)
+
+
+### Features
+
+* test runner mjs config ([086da3d](https://github.com/Neovici/cfg/commit/086da3d97caf8710b607980e0b0c40660cf4f744))
+
 # [1.10.0](https://github.com/Neovici/cfg/compare/v1.9.0...v1.10.0) (2022-03-01)
 
 
