@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
 	env: {
 		browser: true,
@@ -136,7 +138,7 @@ module.exports = {
 	],
 	settings: {
 		'import/resolver': {
-			[path.resolve('./eslint-plugin-import-resolver.js')]: { node: 1 },
+			[path.resolve('./eslint/node-enhanced.js')]: {},
 		}
   }
 };
