@@ -17,6 +17,7 @@
     "eslint/*.js",
     "prettier/*.js",
     "web/*.js",
+    "web/*.mjs",
     "*.js"
   ],
   "scripts": {
