@@ -1,3 +1,11 @@
+# [1.12.0](https://github.com/Neovici/cfg/compare/v1.11.1...v1.12.0) (2022-03-01)
+
+
+### Features
+
+* **eslint:** add node-enhanced resolver ([5f2db9f](https://github.com/Neovici/cfg/commit/5f2db9f063bcea053231844dabdf6c5efcb96966))
+* **eslint:** subpath imports ([f1ace62](https://github.com/Neovici/cfg/commit/f1ace62c90a5d4ae1c38a0cbcde35ac341b1e13c))
+
 ## [1.11.1](https://github.com/Neovici/cfg/compare/v1.11.0...v1.11.1) (2022-03-01)
 
 
