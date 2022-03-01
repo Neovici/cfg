@@ -138,7 +138,7 @@ module.exports = {
 	],
 	settings: {
 		'import/resolver': {
-			[path.resolve('./eslint/node-enhanced.js')]: {},
+			[path.resolve(__dirname, 'node-enhanced.js')]: {},
 		}
   }
 };
