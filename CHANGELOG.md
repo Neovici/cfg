@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/Neovici/cfg/compare/v1.8.1...v1.8.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* export mjs files in web ([69445f9](https://github.com/Neovici/cfg/commit/69445f91f05cb06940d912d42d28670140e0f485))
+
 ## [1.8.1](https://github.com/Neovici/cfg/compare/v1.8.0...v1.8.1) (2022-03-01)
 
 
