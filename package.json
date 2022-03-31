@@ -47,6 +47,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.0",
+    "@web/test-runner": "^0.13.27",
     "@web/test-runner-playwright": "^0.8.8",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.4.0",
