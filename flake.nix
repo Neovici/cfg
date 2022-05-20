@@ -5,6 +5,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     android.url = "github:tadfisher/android-nixpkgs";
     android.inputs.nixpkgs.follows = "nixpkgs";
+    android.inputs.flake-utils.follows = "flake-utils";
   };
   outputs = { self, nixpkgs, flake-utils, android }:
     flake-utils.lib.eachDefaultSystem (system:
