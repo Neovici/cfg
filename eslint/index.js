@@ -1,16 +1,13 @@
 module.exports = {
 	env: {
 		browser: true,
-		es6: true
+		es6: true,
 	},
-	extends: ['eslint:recommended', 'plugin:import/recommended', 'prettier'],
-	plugins: ['html'],
-	parser: '@babel/eslint-parser', // so dynamic `import` is recognized
 	parserOptions: {
-		sourceType: 'module',
-		ecmaVersion: 2018,
-		requireConfigFile: false
+		ecmaVersion: 'latest',
 	},
+	plugins: ['html'],
+	extends: ['eslint:recommended', 'plugin:import/recommended', 'prettier'],
 	rules: {
 		'accessor-pairs': 'error',
 		'array-callback-return': 'warn',
@@ -32,16 +29,16 @@ module.exports = {
 			'warn',
 			{
 				code: 160,
-				tabWidth: 2
-			}
+				tabWidth: 2,
+			},
 		],
 		'max-lines': [
 			'warn',
 			{
 				max: 350,
 				skipBlankLines: true,
-				skipComments: true
-			}
+				skipComments: true,
+			},
 		],
 		'max-lines-per-function': [
 			'warn',
@@ -49,8 +46,8 @@ module.exports = {
 				max: 50,
 				IIFEs: false,
 				skipBlankLines: true,
-				skipComments: true
-			}
+				skipComments: true,
+			},
 		],
 		'max-nested-callbacks': ['error', 5],
 		'max-params': ['error', 5],
@@ -58,15 +55,15 @@ module.exports = {
 		'max-statements-per-line': [
 			'error',
 			{
-				max: 1
-			}
+				max: 1,
+			},
 		],
 		'new-cap': [
 			'error',
 			{
 				capIsNew: true,
-				newIsCap: true
-			}
+				newIsCap: true,
+			},
 		],
 		'no-alert': 'error',
 		'no-console': 'error',
@@ -117,8 +114,8 @@ module.exports = {
 			{
 				const: 'consecutive',
 				let: 'always',
-				var: 'always'
-			}
+				var: 'always',
+			},
 		],
 		'prefer-arrow-callback': 'error',
 		'prefer-const': 'error',
@@ -126,12 +123,16 @@ module.exports = {
 		radix: 'error',
 		'require-unicode-regexp': 'error',
 		strict: 'error',
-		'valid-jsdoc': 'error'
+		'valid-jsdoc': 'error',
 	},
 	overrides: [
 		{
+			files: '**/*.+(ts|tsx)',
+			extends: './typescript',
+		},
+		{
 			files: ['**/*.test.js'],
-			extends: './test'
-		}
-	]
+			extends: './test',
+		},
+	],
 };
