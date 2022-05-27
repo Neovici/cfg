@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/Neovici/cfg/compare/v1.13.2...v1.14.0) (2022-05-27)
+
+
+### Features
+
+* add typescript support ([c32b2d1](https://github.com/Neovici/cfg/commit/c32b2d1f13e27093ba91d3e11224c04fef658de1))
+
 ## [1.13.2](https://github.com/Neovici/cfg/compare/v1.13.1...v1.13.2) (2022-05-20)
 
 
