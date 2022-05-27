@@ -16,7 +16,7 @@ export default {
 			lines: 70,
 		},
 	},
-	files: ['**!(node_modules)/*.test.js'],
+	files: ['**!(node_modules)/*.test.(j|t)s'],
 	testFramework: { config: { ui: 'tdd' } },
 	plugins: [esbuildPlugin({ ts: true, target: 'auto' })],
 };
