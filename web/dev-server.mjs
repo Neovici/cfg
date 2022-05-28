@@ -1,5 +1,5 @@
-import { storybookPlugin } from '@web/dev-server-storybook';
 import { esbuildPlugin } from '@web/dev-server-esbuild';
+import { storybookPlugin } from '@web/dev-server-storybook';
 
 export default {
 	preserveSymlinks: true,
@@ -11,7 +11,7 @@ export default {
 			),
 	},
 	plugins: [
-		storybookPlugin({ type: 'web-components' }),
 		esbuildPlugin({ ts: true, target: 'auto' }),
+		storybookPlugin({ type: 'web-components' }),
 	],
 };
