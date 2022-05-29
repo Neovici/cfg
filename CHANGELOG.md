@@ -1,3 +1,18 @@
+# [1.15.0](https://github.com/Neovici/cfg/compare/v1.14.0...v1.15.0) (2022-05-29)
+
+
+### Bug Fixes
+
+* **eslint:** support *.test.ts files ([7bbad38](https://github.com/Neovici/cfg/commit/7bbad38d172680239a8c4c9b03dc60119843c4b0))
+* remove storybook ([30cf91c](https://github.com/Neovici/cfg/commit/30cf91c9d8afea5c0ceb0e10fe89fd7c21e5872d))
+* storybook ([d5ac4cf](https://github.com/Neovici/cfg/commit/d5ac4cf2ab5b412261247e4d5cd3d9e1c078b15c))
+* **web/test-runner:** ts support ([7169c6e](https://github.com/Neovici/cfg/commit/7169c6eda65a9364ae90c20f39d6113e62a77ce5))
+
+
+### Features
+
+* **web/dev-server:** add support ([0f0a3cf](https://github.com/Neovici/cfg/commit/0f0a3cf98fed5a84444fb73f2e30d6d6f26cf0d8))
+
 # [1.14.0](https://github.com/Neovici/cfg/compare/v1.13.2...v1.14.0) (2022-05-27)
 
 
