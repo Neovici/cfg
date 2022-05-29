@@ -1,7 +1,7 @@
 import { esbuildPlugin } from '@web/dev-server-esbuild';
-import { storybookPlugin } from '@web/dev-server-storybook';
 
 export default {
+	open: true,
 	preserveSymlinks: true,
 	nodeResolve: {
 		mainFields: ['module', 'jsnext:main', 'main'],
@@ -12,6 +12,5 @@ export default {
 	},
 	plugins: [
 		esbuildPlugin({ ts: true, target: 'auto' }),
-		storybookPlugin({ type: 'web-components' }),
 	],
 };
