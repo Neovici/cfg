@@ -11,6 +11,6 @@ export default {
 			),
 	},
 	plugins: [
-		esbuildPlugin({ ts: true, target: 'auto' }),
+		esbuildPlugin({ ts: true }),
 	],
 };
