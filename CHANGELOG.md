@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/Neovici/cfg/compare/v1.15.0...v1.15.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* **esbuild:** no transform by default ([f6ab74a](https://github.com/Neovici/cfg/commit/f6ab74aeb9ef5dd413e52db27948288f3f8e9639))
+
 # [1.15.0](https://github.com/Neovici/cfg/compare/v1.14.0...v1.15.0) (2022-05-29)
 
 
