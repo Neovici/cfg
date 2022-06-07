@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/Neovici/cfg/compare/v1.15.1...v1.15.2) (2022-06-07)
+
+
+### Bug Fixes
+
+* eslint test override fix ([1944342](https://github.com/Neovici/cfg/commit/19443429cad5487c54fd891f6540c2a8527cc9cd))
+
 ## [1.15.1](https://github.com/Neovici/cfg/compare/v1.15.0...v1.15.1) (2022-05-30)
 
 
