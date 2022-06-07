@@ -131,7 +131,7 @@ module.exports = {
 			extends: './typescript',
 		},
 		{
-			files: ['**/*.test.(t|j)s'],
+			files: ['**/*.test.+(t|j)s'],
 			extends: './test',
 		},
 	],
