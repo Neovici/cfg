@@ -1,3 +1,11 @@
+## [1.15.4](https://github.com/Neovici/cfg/compare/v1.15.3...v1.15.4) (2022-06-23)
+
+
+### Bug Fixes
+
+* deps update ([f83d412](https://github.com/Neovici/cfg/commit/f83d4129db91abbd3b23955f1f76941bd5c24c32))
+* **deps:** add @web/dev-server ([59d90dd](https://github.com/Neovici/cfg/commit/59d90dda9e059da3d8cb16fbecfed512ca2a55c8))
+
 ## [1.15.3](https://github.com/Neovici/cfg/compare/v1.15.2...v1.15.3) (2022-06-23)
 
 
