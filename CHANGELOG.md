@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/Neovici/cfg/compare/v1.15.2...v1.15.3) (2022-06-23)
+
+
+### Bug Fixes
+
+* **deps:** upgrade node & npm ([8aeef8e](https://github.com/Neovici/cfg/commit/8aeef8e6c93361ee892e2b557e05f17d760dff1c))
+
 ## [1.15.2](https://github.com/Neovici/cfg/compare/v1.15.1...v1.15.2) (2022-06-07)
 
 
