@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/Neovici/cfg/compare/v1.15.4...v1.16.0) (2022-06-23)
+
+
+### Features
+
+* **typescript:** support imports from js ([211bd77](https://github.com/Neovici/cfg/commit/211bd7772f144cc526047a07c407ee359b482c46))
+
 ## [1.15.4](https://github.com/Neovici/cfg/compare/v1.15.3...v1.15.4) (2022-06-23)
 
 
