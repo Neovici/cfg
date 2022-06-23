@@ -11,7 +11,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs-slim nodePackages.npm python ];
+        deps = with pkgs; [ nodejs-18_x python ];
         env = ''
           export PATH=$PATH:$(npm bin)
           export NIXPKGS_ALLOW_UNFREE=1
@@ -53,7 +53,7 @@
               in
               mkShell rec {
                 packages = [ jdk android-sdk android-studio ];
-                JAVA_HOME=jdk.home;
+                JAVA_HOME = jdk.home;
                 _JAVA_AWT_WM_NONREPARENTING = 1;
                 shellHook = ''
                   acap() {
