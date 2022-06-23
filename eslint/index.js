@@ -135,4 +135,9 @@ module.exports = {
 			extends: './test',
 		},
 	],
+	settings: {
+		'import/resolver': {
+			typescript: {}
+		},
+	},
 };
