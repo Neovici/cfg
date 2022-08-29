@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/Neovici/cfg/compare/v1.17.0...v1.17.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* upgrade deps ([a2d8a1f](https://github.com/Neovici/cfg/commit/a2d8a1fcd3504f43bf212763f98c79a944feced3))
+
 # [1.17.0](https://github.com/Neovici/cfg/compare/v1.16.0...v1.17.0) (2022-07-19)
 
 
