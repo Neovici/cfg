@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/Neovici/cfg/compare/v1.17.2...v1.17.3) (2022-10-05)
+
+
+### Bug Fixes
+
+* **eslint:** disable import/group-exports in typescript ([4265650](https://github.com/Neovici/cfg/commit/42656509a3f8c7b2a33a02194b0e0904b5b619f8))
+
 ## [1.17.2](https://github.com/Neovici/cfg/compare/v1.17.1...v1.17.2) (2022-10-05)
 
 
