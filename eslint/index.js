@@ -16,14 +16,14 @@ module.exports = {
 		complexity: ['warn', 20],
 		'consistent-this': ['error', 'that'],
 		'constructor-super': 'error',
-		curly: ['error', 'all'],
+		curly: ['error', 'multi-line'],
 		eqeqeq: ['error', 'smart'],
 		'func-name-matching': ['error', 'always'],
 		'func-names': ['error', 'never'],
 		'func-style': ['error', 'expression'],
 		'guard-for-in': 'error',
 		'import/no-extraneous-dependencies': 'warn',
-		'import/group-exports': 'error',
+		'import/no-default-export': 'warn',
 		'max-depth': ['error', 4],
 		'max-len': [
 			'warn',
@@ -36,15 +36,6 @@ module.exports = {
 			'warn',
 			{
 				max: 350,
-				skipBlankLines: true,
-				skipComments: true,
-			},
-		],
-		'max-lines-per-function': [
-			'warn',
-			{
-				max: 50,
-				IIFEs: false,
 				skipBlankLines: true,
 				skipComments: true,
 			},
@@ -109,14 +100,6 @@ module.exports = {
 		'no-void': 'error',
 		'no-with': 'error',
 		'object-shorthand': ['error', 'always'],
-		'one-var': [
-			'error',
-			{
-				const: 'consecutive',
-				let: 'always',
-				var: 'always',
-			},
-		],
 		'prefer-arrow-callback': 'error',
 		'prefer-const': 'error',
 		quotes: ['error', 'single'],
