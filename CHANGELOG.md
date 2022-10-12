@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/Neovici/cfg/compare/v1.17.3...v1.18.0) (2022-10-12)
+
+
+### Features
+
+* relax some annoying style rules ([b6a945a](https://github.com/Neovici/cfg/commit/b6a945aa4a821de678af07a25e96b3c688f325de))
+
 ## [1.17.3](https://github.com/Neovici/cfg/compare/v1.17.2...v1.17.3) (2022-10-05)
 
 
