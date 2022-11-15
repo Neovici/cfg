@@ -23,7 +23,6 @@ module.exports = {
 		'func-style': ['error', 'expression'],
 		'guard-for-in': 'error',
 		'import/no-extraneous-dependencies': 'warn',
-		'import/no-default-export': 'warn',
 		'max-depth': ['error', 4],
 		'max-len': [
 			'warn',
