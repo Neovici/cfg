@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/Neovici/cfg/compare/v1.18.0...v1.18.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* don't warn on export default ([7d56c48](https://github.com/Neovici/cfg/commit/7d56c4819dde6ce3ac2d79ff68b553f39df2d470))
+
 # [1.18.0](https://github.com/Neovici/cfg/compare/v1.17.3...v1.18.0) (2022-10-12)
 
 
