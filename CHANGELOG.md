@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/Neovici/cfg/compare/v1.19.0...v1.20.0) (2022-11-17)
+
+
+### Features
+
+* **eslint/typescript:** disable new-cap rule for TS ([507fd95](https://github.com/Neovici/cfg/commit/507fd95b6b6236386254cc16eb6ab7dc34e3cccf))
+
 # [1.19.0](https://github.com/Neovici/cfg/compare/v1.18.1...v1.19.0) (2022-11-17)
 
 
