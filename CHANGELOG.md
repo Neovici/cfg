@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/Neovici/cfg/compare/v1.20.0...v1.20.1) (2022-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update ([a5703b1](https://github.com/Neovici/cfg/commit/a5703b16d80417eb1df386f197d26508427af8b0))
+
 # [1.20.0](https://github.com/Neovici/cfg/compare/v1.19.0...v1.20.0) (2022-11-17)
 
 
