@@ -9,6 +9,7 @@ module.exports = {
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': 'error',
 		'import/group-exports': 'off',
-		'new-cap': 'off'
+		'new-cap': 'off',
+		'func-style': 'off'
 	},
 };
