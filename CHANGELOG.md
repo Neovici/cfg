@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/Neovici/cfg/compare/v1.20.1...v1.21.0) (2022-11-24)
+
+
+### Features
+
+* **eslint:** disable func-style in TS ([2aa103d](https://github.com/Neovici/cfg/commit/2aa103dbea4a357090b5bc0e91c040757e5d0172))
+
 ## [1.20.1](https://github.com/Neovici/cfg/compare/v1.20.0...v1.20.1) (2022-11-22)
 
 
