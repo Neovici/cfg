@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/Neovici/cfg/compare/v1.21.0...v1.22.0) (2022-12-28)
+
+
+### Features
+
+* **web-dev-server:** don't automatically open browser ([53e0ec6](https://github.com/Neovici/cfg/commit/53e0ec6b32fa10b53f85f3f715198720a27cf058))
+
 # [1.21.0](https://github.com/Neovici/cfg/compare/v1.20.1...v1.21.0) (2022-11-24)
 
 
