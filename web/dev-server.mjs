@@ -1,7 +1,7 @@
 import { esbuildPlugin } from '@web/dev-server-esbuild';
 
 export default {
-	open: true,
+	open: false,
 	preserveSymlinks: true,
 	nodeResolve: {
 		mainFields: ['module', 'jsnext:main', 'main'],
