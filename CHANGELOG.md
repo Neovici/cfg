@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/Neovici/cfg/compare/v1.22.0...v1.22.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* **nix:** use python3 ([56c7344](https://github.com/Neovici/cfg/commit/56c7344f6a7828b4d6d48f07b62d527444e02b01))
+
 # [1.22.0](https://github.com/Neovici/cfg/compare/v1.21.0...v1.22.0) (2022-12-28)
 
 
