@@ -29,7 +29,7 @@
                 tmux-ui() {
                   PROJECT=$(basename $(pwd))
                   tmux at -t $PROJECT || tmux new -s $PROJECT -n term \; \
-                    send "npm ci" C-m \; splitw -v -p 50 \; \
+                    splitw -v -p 50 \; \
                     neww -n tig \; send "tig" C-m \; \
                     neww -n nvim \; send "nvim" C-m \; \
                     selectw -t 1\; selectp -t 1 \;
