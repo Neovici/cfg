@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/Neovici/cfg/compare/v1.23.0...v1.23.1) (2023-01-23)
+
+
+### Bug Fixes
+
+* **nix:** add bc ([3591fa3](https://github.com/Neovici/cfg/commit/3591fa3578f6ef3c9717407d361a5a0afea8db1f))
+
 # [1.23.0](https://github.com/Neovici/cfg/compare/v1.22.1...v1.23.0) (2023-01-23)
 
 
