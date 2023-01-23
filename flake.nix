@@ -11,7 +11,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        deps = with pkgs; [ nodejs-18_x python3 ripgrep ];
+        deps = with pkgs; [ nodejs-18_x python3 ripgrep bc ];
         env = ''
           export PATH=$PATH:$(npm bin)
           export NIXPKGS_ALLOW_UNFREE=1
