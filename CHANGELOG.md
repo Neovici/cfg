@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/Neovici/cfg/compare/v1.22.1...v1.23.0) (2023-01-23)
+
+
+### Features
+
+* **nix:** add ripgrep ([877508a](https://github.com/Neovici/cfg/commit/877508a41c82fc4f931168a00074229abacdd19e))
+
 ## [1.22.1](https://github.com/Neovici/cfg/compare/v1.22.0...v1.22.1) (2023-01-10)
 
 
