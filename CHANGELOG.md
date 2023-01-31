@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/Neovici/cfg/compare/v1.23.1...v1.24.0) (2023-01-31)
+
+
+### Features
+
+* update node to v19 ([60fe000](https://github.com/Neovici/cfg/commit/60fe0000ff0578e366ea2d3ba18f68b4f17a7ac7))
+
 ## [1.23.1](https://github.com/Neovici/cfg/compare/v1.23.0...v1.23.1) (2023-01-23)
 
 
