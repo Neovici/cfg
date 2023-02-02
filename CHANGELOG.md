@@ -1,3 +1,11 @@
+# [1.25.0](https://github.com/Neovici/cfg/compare/v1.24.0...v1.25.0) (2023-02-02)
+
+
+### Features
+
+* update deps ([7523243](https://github.com/Neovici/cfg/commit/7523243e69dc036faeba76c8e717e9d05191330d))
+* update workflow ([97f9634](https://github.com/Neovici/cfg/commit/97f9634ee36bbbe17fe459bdf09ff66b790c904b))
+
 # [1.24.0](https://github.com/Neovici/cfg/compare/v1.23.1...v1.24.0) (2023-01-31)
 
 
