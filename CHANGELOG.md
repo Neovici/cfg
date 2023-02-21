@@ -1,3 +1,11 @@
+# [1.26.0-beta.1](https://github.com/Neovici/cfg/compare/v1.25.0...v1.26.0-beta.1) (2023-02-21)
+
+
+### Features
+
+* adjust workflow ([d12fec0](https://github.com/Neovici/cfg/commit/d12fec0ad0a081c95dad64ac13ffa28863a3977f))
+* support beta/dev typescript ([b45d827](https://github.com/Neovici/cfg/commit/b45d8270ced199a3db14f6114665367496cbdd80))
+
 # [1.25.0](https://github.com/Neovici/cfg/compare/v1.24.0...v1.25.0) (2023-02-02)
 
 
