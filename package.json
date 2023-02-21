@@ -1,6 +1,6 @@
 {
   "name": "@neovici/cfg",
-  "version": "1.25.0",
+  "version": "1.26.0-beta.3",
   "description": "Configuration for Neovici packages",
   "homepage": "https://github.com/Neovici/cfg#readme",
   "bugs": {
@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.25.0",
     "eslint-plugin-mocha": "^10.0.0",
     "prettier": "^2.5.0",
-    "typescript": "^4.7.2"
+    "typescript": "^5.0.0-beta"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
