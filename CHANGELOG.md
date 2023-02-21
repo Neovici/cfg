@@ -1,3 +1,10 @@
+# [1.26.0-beta.3](https://github.com/Neovici/cfg/compare/v1.26.0-beta.2...v1.26.0-beta.3) (2023-02-21)
+
+
+### Features
+
+* beta ts ([989dd2d](https://github.com/Neovici/cfg/commit/989dd2d59b10460f043509a9467b4f08a2f4e129))
+
 # [1.26.0-beta.2](https://github.com/Neovici/cfg/compare/v1.26.0-beta.1...v1.26.0-beta.2) (2023-02-21)
 
 
