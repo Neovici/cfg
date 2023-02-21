@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/Neovici/cfg/compare/v1.26.0...v1.27.0) (2023-02-21)
+
+
+### Features
+
+* **deps:** adjust ts dep ([efee9df](https://github.com/Neovici/cfg/commit/efee9df262604aecd29065aa3bae72b5ea2ac7d3))
+
 # [1.26.0](https://github.com/Neovici/cfg/compare/v1.25.0...v1.26.0) (2023-02-21)
 
 
