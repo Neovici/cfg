@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/Neovici/cfg/compare/v1.27.0...v1.28.0) (2023-03-16)
+
+
+### Features
+
+* latest TS ([1f13e95](https://github.com/Neovici/cfg/commit/1f13e95cf3c89bf6b76f999b3bc9b0fa731aab47))
+
 # [1.27.0](https://github.com/Neovici/cfg/compare/v1.26.0...v1.27.0) (2023-02-21)
 
 
