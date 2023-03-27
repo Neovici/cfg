@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/Neovici/cfg/compare/v1.28.0...v1.29.0) (2023-03-27)
+
+
+### Features
+
+* **deps:** upgrade ([1660547](https://github.com/Neovici/cfg/commit/1660547a39e50e4911b71a2da5f15cd6fdb0370a))
+
 # [1.28.0](https://github.com/Neovici/cfg/compare/v1.27.0...v1.28.0) (2023-03-16)
 
 
