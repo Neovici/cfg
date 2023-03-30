@@ -1,3 +1,20 @@
+# [1.30.0](https://github.com/Neovici/cfg/compare/v1.29.0...v1.30.0) (2023-03-30)
+
+
+### Bug Fixes
+
+* **ci:** typo in build ([600d964](https://github.com/Neovici/cfg/commit/600d964efb206ff9c1d15060b766ec2c40264bcf))
+* relative path to workflow ([6c40401](https://github.com/Neovici/cfg/commit/6c4040140fbd18063ec5da8aeef5c7c5e7a3729f))
+
+
+### Features
+
+* build ([e464027](https://github.com/Neovici/cfg/commit/e464027447a91658696415088faeb16f7687e03b))
+* call workflow ([aa10137](https://github.com/Neovici/cfg/commit/aa10137a86a1fa76376df30bb4eff815fde06d85))
+* **ci:** add lint script ([88e589a](https://github.com/Neovici/cfg/commit/88e589a797cc463d2827679c94a167ebb624b3f5))
+* **ci:** adjust forge workflow ([fad20b4](https://github.com/Neovici/cfg/commit/fad20b4c1f88784e0411c8af5cf5c46f8ad25293))
+* **ci:** implement reusable workflow ([09b9a9d](https://github.com/Neovici/cfg/commit/09b9a9d9eeecdb98a6cc11d2e6c2b2500bfe7a24))
+
 # [1.29.0](https://github.com/Neovici/cfg/compare/v1.28.0...v1.29.0) (2023-03-27)
 
 
