@@ -1,3 +1,10 @@
+## [1.30.1](https://github.com/Neovici/cfg/compare/v1.30.0...v1.30.1) (2023-03-30)
+
+
+### Bug Fixes
+
+* cache npm ([58d91ef](https://github.com/Neovici/cfg/commit/58d91efde81526a670b521f770b5df7aaafe9dcb))
+
 # [1.30.0](https://github.com/Neovici/cfg/compare/v1.29.0...v1.30.0) (2023-03-30)
 
 
