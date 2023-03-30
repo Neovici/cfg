@@ -21,9 +21,7 @@
     "*.js"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "test:eslint": "eslint *.js eslint/*.js",
-    "test": "npm run test:eslint",
+    "lint": "eslint --cache .",
     "prepare": "husky install"
   },
   "release": {
