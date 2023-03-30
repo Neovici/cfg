@@ -9,4 +9,4 @@ on:
       - master
 jobs:
   build:
-    uses: Neovici/cfg/.github/workflows/forge.yml
+    uses: Neovici/cfg/.github/workflows/forge.yml@master
