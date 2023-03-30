@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/Neovici/cfg/compare/v1.30.1...v1.31.0) (2023-03-30)
+
+
+### Features
+
+* **deps:** refresh ([fe5659e](https://github.com/Neovici/cfg/commit/fe5659e3127d649a14218a29bbf936ca38beecd2))
+
 ## [1.30.1](https://github.com/Neovici/cfg/compare/v1.30.0...v1.30.1) (2023-03-30)
 
 
