@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/Neovici/cfg/compare/v1.31.0...v1.32.0) (2023-03-30)
+
+
+### Features
+
+* remove karma problem matcher ([52e9834](https://github.com/Neovici/cfg/commit/52e9834865f3e5202e78853eac6706143c9b2736))
+
 # [1.31.0](https://github.com/Neovici/cfg/compare/v1.30.1...v1.31.0) (2023-03-30)
 
 
