@@ -9,5 +9,5 @@ on:
       - master
 jobs:
   build:
-    uses: .github/workflows/forge.yml
+    uses: Neovici/cfg/.github/workflows/forge.yml@master
     secrets: inherit
