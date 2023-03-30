@@ -29,9 +29,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Test
-        run: |
-          echo "::add-matcher::.github/problem-matcher.json"
-          npm test --if-present
+        run: npm test --if-present
 
       - name: Upload coverage
         uses: codecov/codecov-action@v3
