@@ -18,7 +18,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Lint commit
+      - name: Lint commits
         uses: wagoid/commitlint-github-action@v5
 
       - name: Lint code
