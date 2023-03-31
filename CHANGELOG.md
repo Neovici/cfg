@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/Neovici/cfg/compare/v1.32.0...v1.33.0) (2023-03-31)
+
+
+### Features
+
+* **ci:** add story workflow ([977c3d6](https://github.com/Neovici/cfg/commit/977c3d668303edc6cc6fc74ee7a5b65a6f1e4393))
+
 # [1.32.0](https://github.com/Neovici/cfg/compare/v1.31.0...v1.32.0) (2023-03-30)
 
 
