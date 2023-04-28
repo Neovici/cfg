@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/Neovici/cfg/compare/v1.33.0...v1.34.0) (2023-04-28)
+
+
+### Features
+
+* upgrade web packages ([b18a14b](https://github.com/Neovici/cfg/commit/b18a14b3c558d0114fc748bca017eb136f4d771d))
+
 # [1.33.0](https://github.com/Neovici/cfg/compare/v1.32.0...v1.33.0) (2023-03-31)
 
 
