@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/Neovici/cfg/compare/v1.35.0...v1.36.0) (2023-06-28)
+
+
+### Features
+
+* add rollup config parts ([443dae0](https://github.com/Neovici/cfg/commit/443dae0a3de49ab04b658dc90069e9274bd321ba))
+
 # [1.35.0](https://github.com/Neovici/cfg/compare/v1.34.0...v1.35.0) (2023-06-13)
 
 
