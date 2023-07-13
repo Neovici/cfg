@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/Neovici/cfg/compare/v1.37.0...v1.38.0) (2023-07-13)
+
+
+### Features
+
+* **deps:** upgrade packages ([c6fda40](https://github.com/Neovici/cfg/commit/c6fda405094de840f1927d65ef98837b157613d7))
+
 # [1.37.0](https://github.com/Neovici/cfg/compare/v1.36.0...v1.37.0) (2023-07-11)
 
 
