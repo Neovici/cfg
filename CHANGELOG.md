@@ -1,3 +1,10 @@
+## [1.38.1](https://github.com/Neovici/cfg/compare/v1.38.0...v1.38.1) (2023-07-13)
+
+
+### Bug Fixes
+
+* **eslint:** warn any ([5106cf1](https://github.com/Neovici/cfg/commit/5106cf1a625989ca05395bf48a9c01873135bf6e))
+
 # [1.38.0](https://github.com/Neovici/cfg/compare/v1.37.0...v1.38.0) (2023-07-13)
 
 
