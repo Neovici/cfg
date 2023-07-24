@@ -1,3 +1,10 @@
+## [1.38.2](https://github.com/Neovici/cfg/compare/v1.38.1...v1.38.2) (2023-07-24)
+
+
+### Bug Fixes
+
+* **flake:** correct bin path ([8e1a8ed](https://github.com/Neovici/cfg/commit/8e1a8edf554b6973e97f74bd060395deec10679d))
+
 ## [1.38.1](https://github.com/Neovici/cfg/compare/v1.38.0...v1.38.1) (2023-07-13)
 
 
