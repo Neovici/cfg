@@ -18,7 +18,7 @@
           bc
         ];
         env = ''
-          export PATH=$PATH:$(npm bin)
+          export PATH=$PATH:node_modules/.bin
           export NIXPKGS_ALLOW_UNFREE=1
           export XDG_DATA_DIRS=$XDG_DATA_DIRS:/etc/profiles/per-user/$USER/share
           export SHELL=${pkgs.bashInteractive}/bin/bash
