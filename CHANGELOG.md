@@ -1,3 +1,10 @@
+## [1.38.3](https://github.com/Neovici/cfg/compare/v1.38.2...v1.38.3) (2023-08-09)
+
+
+### Bug Fixes
+
+* deps updates ([463eab0](https://github.com/Neovici/cfg/commit/463eab007980a0688845a8476ccd9cf681ba08c9))
+
 ## [1.38.2](https://github.com/Neovici/cfg/compare/v1.38.1...v1.38.2) (2023-07-24)
 
 
