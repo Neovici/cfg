@@ -1,3 +1,11 @@
+# [1.39.0](https://github.com/Neovici/cfg/compare/v1.38.3...v1.39.0) (2023-10-09)
+
+
+### Features
+
+* **ci:** install playwright ([89ac2a7](https://github.com/Neovici/cfg/commit/89ac2a7c26cb582cacb9bb689fd16c34a5adc864))
+* node 20 ([7d89666](https://github.com/Neovici/cfg/commit/7d89666d048329cbc46f97eed9e94292bfed2ddf))
+
 ## [1.38.3](https://github.com/Neovici/cfg/compare/v1.38.2...v1.38.3) (2023-08-09)
 
 
