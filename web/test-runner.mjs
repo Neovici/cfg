@@ -3,10 +3,17 @@ import { esbuildPlugin } from '@web/dev-server-esbuild';
 
 export default {
 	nodeResolve: true,
-	browsers: [
-		playwrightLauncher({ product: 'chromium' }),
-		playwrightLauncher({ product: 'firefox' }),
-	],
+	browsers: process.env.HEADED
+		? [
+				playwrightLauncher({
+					product: 'chromium',
+					launchOptions: { headless: false },
+				}),
+		  ]
+		: [
+				playwrightLauncher({ product: 'chromium' }),
+				playwrightLauncher({ product: 'firefox' }),
+		  ],
 	coverageConfig: {
 		reportDir: 'coverage',
 		threshold: {
