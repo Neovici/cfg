@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/Neovici/cfg/compare/v1.39.0...v1.40.0) (2023-10-17)
+
+
+### Features
+
+* ability to run tests in headed browser ([635716a](https://github.com/Neovici/cfg/commit/635716ab554175bdbb5f389f9c9ad48c77536544))
+
 # [1.39.0](https://github.com/Neovici/cfg/compare/v1.38.3...v1.39.0) (2023-10-09)
 
 
