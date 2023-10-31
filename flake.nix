@@ -39,6 +39,15 @@
                 }
               '';
             };
+          dotnetShell = pkgs.mkShell rec {
+            packages = with pkgs; [
+              omnisharp-roslyn
+              dotnet-sdk_6
+              powershell
+              dotnetPackages.Nuget
+              msbuild
+            ];
+          };
 
         };
 
