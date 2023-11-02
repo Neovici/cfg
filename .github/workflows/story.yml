@@ -22,8 +22,11 @@ jobs:
       - name: Build
         run: npm run build --if-present
 
-      - name: Fix import
+      - name: Fix import in stories
         run: sed -i 's/..\/src/..\/dist/g' stories/*.stories.js
+
+      - name: Fix imports in demos
+        run: sed -i 's/..\/src/..\/dist/g' demo/*.js
 
       - name: Deploy storybook
         run: npm run storybook:deploy -- --ci
