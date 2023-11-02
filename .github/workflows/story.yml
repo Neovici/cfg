@@ -24,8 +24,8 @@ jobs:
 
       - name: Fix imports
         run: |
-          [ -d "stories" ] && sed -i 's/..\/src/..\/dist/g' stories/*.stories.js
-          [ -d "demo" ] && sed -i 's/..\/src/..\/dist/g' demo/*.js
+          [ -d "stories" ] && sed -i 's/..\/src/..\/dist/g' stories/*.stories.js || true
+          [ -d "demo" ] && sed -i 's/..\/src/..\/dist/g' demo/*.js || true
 
       - name: Deploy storybook
         run: npm run storybook:deploy -- --ci
