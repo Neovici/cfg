@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/Neovici/cfg/compare/v1.41.0...v1.42.0) (2023-11-15)
+
+
+### Features
+
+* **web/test-runner:** use same nodeResolve config ([dc3f1cc](https://github.com/Neovici/cfg/commit/dc3f1ccbf82fe8f26cd67a7df0670bead63ef1fc))
+
 # [1.41.0](https://github.com/Neovici/cfg/compare/v1.40.0...v1.41.0) (2023-11-01)
 
 
