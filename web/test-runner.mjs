@@ -1,8 +1,8 @@
 import { playwrightLauncher } from '@web/test-runner-playwright';
 import { esbuildPlugin } from '@web/dev-server-esbuild';
+import { nodeResolve } from './rollup.mjs';
 
 export default {
-	nodeResolve: true,
 	browsers: process.env.HEADED
 		? [
 				playwrightLauncher({
@@ -25,5 +25,6 @@ export default {
 	},
 	files: ['**!(node_modules)/*.test.(j|t)s'],
 	testFramework: { config: { ui: 'tdd' } },
+	nodeResolve,
 	plugins: [esbuildPlugin({ ts: true })],
 };
