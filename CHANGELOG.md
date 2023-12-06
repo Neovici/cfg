@@ -1,3 +1,10 @@
+# [1.43.0](https://github.com/Neovici/cfg/compare/v1.42.0...v1.43.0) (2023-12-06)
+
+
+### Features
+
+* **perform:** test helper to use playwright commands in your tests ([81f798f](https://github.com/Neovici/cfg/commit/81f798f9b7e03a7a8773d5a2ca6f0b651fd4a25f))
+
 # [1.42.0](https://github.com/Neovici/cfg/compare/v1.41.0...v1.42.0) (2023-11-15)
 
 
