@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/Neovici/cfg/compare/v1.44.0...v1.45.0) (2024-01-13)
+
+
+### Features
+
+* update dedupe ([2b3ee38](https://github.com/Neovici/cfg/commit/2b3ee38cc61b708642fb65dd68586acb6aa37109))
+
 # [1.44.0](https://github.com/Neovici/cfg/compare/v1.43.0...v1.44.0) (2023-12-08)
 
 
