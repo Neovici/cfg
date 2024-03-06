@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/Neovici/cfg/compare/v1.48.0...v1.49.0) (2024-03-06)
+
+
+### Features
+
+* update deps and workflow ([a08a632](https://github.com/Neovici/cfg/commit/a08a632c37d8d2e8e91a2f91764e3e222e3e148f))
+
 # [1.48.0](https://github.com/Neovici/cfg/compare/v1.47.0...v1.48.0) (2024-02-23)
 
 
