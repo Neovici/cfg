@@ -1,3 +1,10 @@
+# [1.50.0](https://github.com/Neovici/cfg/compare/v1.49.0...v1.50.0) (2024-03-12)
+
+
+### Features
+
+* use node 20 ([75e8593](https://github.com/Neovici/cfg/commit/75e85937d8419d4f3d89db8b42343686a2862f5b))
+
 # [1.49.0](https://github.com/Neovici/cfg/compare/v1.48.0...v1.49.0) (2024-03-06)
 
 
