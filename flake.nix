@@ -15,7 +15,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       rec {
-        devShell = dev.lib.shell { inherit pkgs; };
+        devShell = dev.lib.shell { inherit pkgs; extraDeps = (with pkgs;[ azure-storage-azcopy ]); };
         packages = {
           patch-playwright = dev.lib.patch-playwright pkgs;
           androidShell =
