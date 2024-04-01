@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/Neovici/cfg/compare/v1.50.0...v1.51.0) (2024-04-01)
+
+
+### Features
+
+* update dotnetShell ([1b9661d](https://github.com/Neovici/cfg/commit/1b9661d1b5340839b563a88bbf09bee05599ae41))
+
 # [1.50.0](https://github.com/Neovici/cfg/compare/v1.49.0...v1.50.0) (2024-03-12)
 
 
