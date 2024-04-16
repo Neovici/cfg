@@ -32,11 +32,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1712732337,
-        "narHash": "sha256-uv0hs7G6k30tna3THRkGsQlcIMZbQXcPmw33s3uN11U=",
+        "lastModified": 1713241260,
+        "narHash": "sha256-X8VdxOlmZu/XtH6rzUTRjOCQL2bVt791ZsM4N2qYZqY=",
         "owner": "plumelo",
         "repo": "dev",
-        "rev": "d71b25290655143c4c7d0295b8197a8f92fced97",
+        "rev": "7b89b86b783f8d230ab3404a93873f30f54f2ef5",
         "type": "github"
       },
       "original": {
@@ -123,11 +123,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1712791164,
-        "narHash": "sha256-3sbWO1mbpWsLepZGbWaMovSO7ndZeFqDSdX0hZ9nVyw=",
+        "lastModified": 1712963716,
+        "narHash": "sha256-WKm9CvgCldeIVvRz87iOMi8CFVB1apJlkUT4GGvA0iM=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1042fd8b148a9105f3c0aca3a6177fd1d9360ba5",
+        "rev": "cfd6b5fc90b15709b780a5a1619695a88505a176",
         "type": "github"
       },
       "original": {
