@@ -1,6 +1,10 @@
 name: Story
 on:
   workflow_call:
+    inputs:
+      skip_dist:
+        description: 'True to skip the import fixing'
+        type: boolean
 jobs:
   storybook:
     runs-on: ubuntu-latest
@@ -23,6 +27,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Fix imports
+        if: ${{ !inputs.skip_dist }}
         run: |
           [ -d "stories" ] && sed -i 's/..\/src/..\/dist/g' stories/*.stories.js || true
           [ -d "demo" ] && sed -i 's/..\/src/..\/dist/g' demo/*.js || true
