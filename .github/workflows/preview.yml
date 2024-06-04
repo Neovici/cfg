@@ -2,9 +2,9 @@ name: Preview
 
 on:
   workflow_call:
-     skip_dist:
-        description: 'True to skip the import fixing'
-        type: boolean
+    skip_dist:
+      description: 'True to skip the import fixing'
+      type: boolean
 
 jobs:
   deploy-preview:
@@ -28,7 +28,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Fix imports
-        if:  ${{ !inputs.skip_dist }}
+        if: ${{ !inputs.skip_dist }}
         run: |
           [ -d "stories" ] && sed -i 's/..\/src/..\/dist/g' stories/*.stories.js || true
           [ -d "demo" ] && sed -i 's/..\/src/..\/dist/g' demo/*.js || true
