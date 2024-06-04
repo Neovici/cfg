@@ -1,3 +1,10 @@
+## [1.54.1](https://github.com/Neovici/cfg/compare/v1.54.0...v1.54.1) (2024-06-04)
+
+
+### Bug Fixes
+
+* **preview:** allow skipping import fixing ([144093f](https://github.com/Neovici/cfg/commit/144093f81e6f8aabb041faca0054ca4565f5ee60))
+
 # [1.54.0](https://github.com/Neovici/cfg/compare/v1.53.0...v1.54.0) (2024-06-03)
 
 
