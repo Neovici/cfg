@@ -105,7 +105,12 @@ module.exports = {
 		radix: 'error',
 		'require-unicode-regexp': 'error',
 		strict: 'error',
-		'valid-jsdoc': 'error',
+		'valid-jsdoc': [
+			'error',
+			{
+				requireReturn: false,
+			},
+		],
 	},
 	overrides: [
 		{
@@ -119,7 +124,7 @@ module.exports = {
 	],
 	settings: {
 		'import/resolver': {
-			typescript: {}
+			typescript: {},
 		},
 	},
 };
