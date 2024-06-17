@@ -1,3 +1,10 @@
+# [1.55.0](https://github.com/Neovici/cfg/compare/v1.54.1...v1.55.0) (2024-06-17)
+
+
+### Features
+
+* **eslint:** allow missing return in jsdoc ([a21666c](https://github.com/Neovici/cfg/commit/a21666c1b8e926104eecc8e74952be2402fb43fb))
+
 ## [1.54.1](https://github.com/Neovici/cfg/compare/v1.54.0...v1.54.1) (2024-06-04)
 
 
