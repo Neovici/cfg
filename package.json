@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "lint": "eslint --cache .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "release": {
     "plugins": [
@@ -45,8 +45,8 @@
   },
   "dependencies": {
     "@playwright/test": "^1.40.1",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0 || ^8.0.0",
+    "@typescript-eslint/parser": "^7.0.0 || ^8.0.0",
     "@web/dev-server": "^0.4.0",
     "@web/dev-server-esbuild": "^1.0.0",
     "@web/test-runner": "^0.18.0",
