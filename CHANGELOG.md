@@ -1,3 +1,10 @@
+# [1.57.0](https://github.com/Neovici/cfg/compare/v1.56.0...v1.57.0) (2024-08-28)
+
+
+### Features
+
+* update deps ([b8514f7](https://github.com/Neovici/cfg/commit/b8514f79f330d652d4688bf7a572d5c5de261eaf))
+
 # [1.56.0](https://github.com/Neovici/cfg/compare/v1.55.0...v1.56.0) (2024-08-13)
 
 
