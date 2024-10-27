@@ -32,11 +32,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729348312,
-        "narHash": "sha256-quvkwp+fzIhKJsrgvqRUarkAtYx3xKudKsVh17lKRaM=",
+        "lastModified": 1730034967,
+        "narHash": "sha256-6bQ0I9Tedg0e8OoRw4ol5B3B3gLUJKJKp2nDvs9uZho=",
         "owner": "plumelo",
         "repo": "dev",
-        "rev": "f08051138d99c9d08d5575b306e4ad9882760aaf",
+        "rev": "e7e135e1d77a1beef8febcd9303cdc301bd460e3",
         "type": "github"
       },
       "original": {
