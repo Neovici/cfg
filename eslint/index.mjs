@@ -130,14 +130,6 @@ export default [
 			},
 		},
 	},
-	{
-		files: ['**/*.test.+(t|j)s'],
-		...testConfig,
-	},
+	...testConfig,
 	...tsConfig,
-	// {
-	// 	name: 'typescript',
-	// 	files: ['**/*.+(ts|tsx)'],
-	// 	...tsConfig,
-	// },
 ];
