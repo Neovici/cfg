@@ -9,6 +9,7 @@ import tsConfig from './typescript.mjs';
 export default [
 	eslint.configs.recommended,
 	importPlugin.flatConfigs.recommended,
+	importPlugin.flatConfigs.typescript,
 	eslintConfigPrettier,
 	{
 		languageOptions: {
