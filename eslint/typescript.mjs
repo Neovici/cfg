@@ -6,6 +6,7 @@ export default [
 		name: 'ts-overrides',
 		files: ['**/*.+(ts|tsx)'],
 		rules: {
+			'import/named': 'off',
 			'no-unused-vars': 'off',
 			'@typescript-eslint/no-unused-vars': 'error',
 			'@typescript-eslint/no-explicit-any': 'warn',
