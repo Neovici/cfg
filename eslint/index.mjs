@@ -126,7 +126,8 @@ export default [
 		},
 		settings: {
 			'import/resolver': {
-				typescript: {},
+				typescript: true,
+				node: true,
 			},
 		},
 	},
