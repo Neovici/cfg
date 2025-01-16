@@ -10,20 +10,22 @@ export default [
 		// 	mocha: true,
 		// },
 		// plugins: ['mocha'],
-		globals: {
-			// added by mocha
-			test: 'readonly',
-			// added by chai
-			chai: 'readonly',
-			assert: 'readonly',
-			expect: 'readonly',
-			// added by test-fixture-mocha
-			fixture: 'readonly',
-			// added by sinon
-			sinon: 'readonly',
-			// added by wct-mocha
-			WCT: 'readonly',
-			flush: 'readonly',
+		languageOptions: {
+			globals: {
+				// added by mocha
+				test: 'readonly',
+				// added by chai
+				chai: 'readonly',
+				assert: 'readonly',
+				expect: 'readonly',
+				// added by test-fixture-mocha
+				fixture: 'readonly',
+				// added by sinon
+				sinon: 'readonly',
+				// added by wct-mocha
+				WCT: 'readonly',
+				flush: 'readonly',
+			},
 		},
 		rules: {
 			// tests can be as long as they need to be
