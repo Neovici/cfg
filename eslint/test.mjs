@@ -1,6 +1,6 @@
-module.exports = {
+export default {
 	env: {
-		mocha: true
+		mocha: true,
 	},
 	plugins: ['mocha'],
 	globals: {
@@ -16,13 +16,13 @@ module.exports = {
 		sinon: 'readonly',
 		// added by wct-mocha
 		WCT: 'readonly',
-		flush: 'readonly'
+		flush: 'readonly',
 	},
 	rules: {
 		// tests can be as long as they need to be
 		'max-lines-per-function': 'off',
 		'max-statements': 'off',
 		// for chai expect syntax: `expect().to.be.ok`
-		'no-unused-expressions': 'off'
-	}
+		'no-unused-expressions': 'off',
+	},
 };
