@@ -33,6 +33,7 @@ export default [
 			'max-statements': 'off',
 			// for chai expect syntax: `expect().to.be.ok`
 			'no-unused-expressions': 'off',
+			'mocha/no-mocha-arrows': 'off',
 		},
 	},
 ];
