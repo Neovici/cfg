@@ -15,7 +15,9 @@
   "main": "index.js",
   "files": [
     "eslint/*.js",
+    "eslint/*.mjs",
     "prettier/*.js",
+    "prettier/*.mjs",
     "web/*.js",
     "web/*.mjs",
     "*.js"
