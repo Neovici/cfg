@@ -1,3 +1,27 @@
+# [2.0.0](https://github.com/Neovici/cfg/compare/v1.57.0...v2.0.0) (2025-01-17)
+
+
+### Bug Fixes
+
+* **eslint:** import typescript ([0afec3d](https://github.com/Neovici/cfg/commit/0afec3da189d11869fa09ca3086f69f041ddf1e5))
+
+
+### Features
+
+* **eslint/test:** mocha arrow function ([cd1c403](https://github.com/Neovici/cfg/commit/cd1c403b0519f6891ab9b5954571bb41c01a0c4c))
+* **eslint/test:** update ([390ad97](https://github.com/Neovici/cfg/commit/390ad97de9e31d7f06331e536cc54eeab02f0449))
+* **eslint/typescript:** upgrade config ([3e954aa](https://github.com/Neovici/cfg/commit/3e954aadc9c8723a7893f632e30b0199d55d72d6))
+* **eslint:** update config ([fdf8d72](https://github.com/Neovici/cfg/commit/fdf8d722ed794a1db8673a8b566f06945dcff5b5))
+* **prettier:** update test config ([2be4c25](https://github.com/Neovici/cfg/commit/2be4c25e292d6a9d15be1fb21df1b50fd8703628))
+* update deps ([23f2b9b](https://github.com/Neovici/cfg/commit/23f2b9bf842b2d1cf73e2e7ed2234336aef521bf))
+* update package ([a13a666](https://github.com/Neovici/cfg/commit/a13a66672238630b100f957df60bd7d24f85bc1b))
+* update prettier ([4759f96](https://github.com/Neovici/cfg/commit/4759f9658bc51f25780f0e7c07277698d5b3b193))
+
+
+### BREAKING CHANGES
+
+* **eslint:** Update to eslint 9
+
 # [1.57.0](https://github.com/Neovici/cfg/compare/v1.56.0...v1.57.0) (2024-08-28)
 
 
