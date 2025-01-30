@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Neovici/cfg/compare/v2.0.0...v2.0.1) (2025-01-30)
+
+
+### Bug Fixes
+
+* update to node 22 ([5634338](https://github.com/Neovici/cfg/commit/5634338918e5be59bb0f7d95696b7e2c3dfa42ce))
+
 # [2.0.0](https://github.com/Neovici/cfg/compare/v1.57.0...v2.0.0) (2025-01-17)
 
 
