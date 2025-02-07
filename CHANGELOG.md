@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/Neovici/cfg/compare/v2.0.1...v2.1.0) (2025-02-07)
+
+
+### Features
+
+* **ci:** use node 22 ([d49c0cd](https://github.com/Neovici/cfg/commit/d49c0cd3bb3cecd5ced77a8c8241e1f5bd130ff3))
+
 ## [2.0.1](https://github.com/Neovici/cfg/compare/v2.0.0...v2.0.1) (2025-01-30)
 
 
