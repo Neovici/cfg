@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/Neovici/cfg/compare/v2.1.0...v2.2.0) (2025-03-20)
+
+
+### Features
+
+* **lint:** update typescript rules ([230ba0f](https://github.com/Neovici/cfg/commit/230ba0f26da6b4b6b36f5ec61a69239fa59f471a))
+
 # [2.1.0](https://github.com/Neovici/cfg/compare/v2.0.1...v2.1.0) (2025-02-07)
 
 
