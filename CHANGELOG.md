@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/Neovici/cfg/compare/v2.2.0...v2.2.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* **web:** firefox 135 cannot run tests in the same file in parallel ([09fb7ce](https://github.com/Neovici/cfg/commit/09fb7ce2e724b8e9b1be475cf9e24e2a6a232d63))
+
 # [2.2.0](https://github.com/Neovici/cfg/compare/v2.1.0...v2.2.0) (2025-03-20)
 
 
