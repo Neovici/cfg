@@ -10,11 +10,11 @@ export default {
 					product: 'chromium',
 					launchOptions: { headless: false },
 				}),
-		  ]
+			]
 		: [
 				playwrightLauncher({ product: 'chromium' }),
-				playwrightLauncher({ product: 'firefox' }),
-		  ],
+				playwrightLauncher({ product: 'firefox', concurrency: 1 }),
+			],
 	coverageConfig: {
 		reportDir: 'coverage',
 		threshold: {
