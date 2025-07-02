@@ -12,10 +12,12 @@
   outputs = { self, nixpkgs, flake-utils, android, dev }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
+        extraDeps = with pkgs; [ azure-storage-azcopy sops age ];
       in
       rec {
-        devShell = dev.lib.env { inherit pkgs; extraDeps = (with pkgs;[ azure-storage-azcopy ]); };
+        devShell = dev.lib.shell { inherit pkgs extraDeps; };
+        devShells.env = dev.lib.shell { inherit pkgs extraDeps; };
         packages = {
           patch-playwright = dev.lib.patch-playwright pkgs;
           androidShell =
