@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/Neovici/cfg/compare/v2.2.1...v2.3.0) (2025-07-02)
+
+
+### Features
+
+* add more deps ([1fb1ad5](https://github.com/Neovici/cfg/commit/1fb1ad5d0903e5a1c5e5c3714987a175c5e4a260))
+
 ## [2.2.1](https://github.com/Neovici/cfg/compare/v2.2.0...v2.2.1) (2025-04-10)
 
 
