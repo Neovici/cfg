@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/Neovici/cfg/compare/v2.3.0...v2.4.0) (2025-07-18)
+
+
+### Features
+
+* new workflow auto approve merge dependabot ([da572ce](https://github.com/Neovici/cfg/commit/da572ce084d5cfeff702955a341479ebde882896))
+
 # [2.3.0](https://github.com/Neovici/cfg/compare/v2.2.1...v2.3.0) (2025-07-02)
 
 
