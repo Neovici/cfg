@@ -1,0 +1,44 @@
+---
+name: Auto Approve and Merge Dependabot PRs
+
+on:
+  workflow_call:
+
+jobs:
+  auto-approve-merge-dependabot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Wait for checks status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+            });
+            const { data: status } = await github.rest.repos
+              .getCombinedStatusForRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: pr.head.sha,
+              });
+            if (status.state !== 'success') {
+              throw new Error('Not all status checks have passed.');
+            }
+
+      - name: Auto-approve PR
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge PR (rebase)
+        uses: pascalgn/automerge-action@v0.16.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          merge_method: rebase
