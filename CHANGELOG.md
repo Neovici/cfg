@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/Neovici/cfg/compare/v2.4.0...v2.5.0) (2025-07-20)
+
+
+### Features
+
+* automerge worflow config ([03b6348](https://github.com/Neovici/cfg/commit/03b6348d8ee4e5b35927d9cecc032dbfa06547e2))
+
 # [2.4.0](https://github.com/Neovici/cfg/compare/v2.3.0...v2.4.0) (2025-07-18)
 
 
