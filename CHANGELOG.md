@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-07-20)
+
+
+### Bug Fixes
+
+* **forge:** commitlint with config file ([ef27b9b](https://github.com/Neovici/cfg/commit/ef27b9b2bd616793aa6b7912ff9f909451cb86a0))
+
 # [2.5.0](https://github.com/Neovici/cfg/compare/v2.4.0...v2.5.0) (2025-07-20)
 
 
