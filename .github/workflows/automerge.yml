@@ -23,5 +23,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MERGE_FILTER_AUTHOR: dependabot[bot]
-          MERGE_LABELS: "automerge"
+          MERGE_LABELS: ""
           MERGE_METHOD: "rebase"
