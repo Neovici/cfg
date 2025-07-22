@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-07-22)
+
+
+### Bug Fixes
+
+* automerge filename a short one ([8fd3fc0](https://github.com/Neovici/cfg/commit/8fd3fc03a72d3bb7cdf708e146626ea8dfec0ab2))
+
 ## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-07-21)
 
 
