@@ -5,6 +5,15 @@
 
 * add workflow_call ([886a86b](https://github.com/Neovici/cfg/commit/886a86b7971748f211ccd50eb6695fa403b129a5))
 * automerge filename a short one ([8fd3fc0](https://github.com/Neovici/cfg/commit/8fd3fc03a72d3bb7cdf708e146626ea8dfec0ab2))
+* **ci:** automerge env ([7f58c91](https://github.com/Neovici/cfg/commit/7f58c91130f40dd1a4ed851bad3a72b3091ee2fc))
+
+## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-07-22)
+
+
+### Bug Fixes
+
+* add workflow_call ([886a86b](https://github.com/Neovici/cfg/commit/886a86b7971748f211ccd50eb6695fa403b129a5))
+* automerge filename a short one ([8fd3fc0](https://github.com/Neovici/cfg/commit/8fd3fc03a72d3bb7cdf708e146626ea8dfec0ab2))
 
 ## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-07-22)
 
