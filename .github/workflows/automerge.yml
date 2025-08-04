@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Wait to start checks
         run: |
-          echo "Waiting to start checks"; sleep 20
+          echo "Waiting to start checks"; sleep 60
       - name: Approve PR
         run: gh pr review --approve "$PR_URL"
         env:
