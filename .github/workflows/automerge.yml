@@ -13,14 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
-      - name: Wait to start checks
-        run: |
-          echo "Waiting to start checks"; sleep 60
-      - name: Approve PR
+      - name: Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v2
+      - name: Enable auto-approve for Dependabot PRs
+        if: ${{steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch'}}
         run: gh pr review --approve "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Enable auto-merge
         run: gh pr merge --auto --merge "$PR_URL"
         env:
