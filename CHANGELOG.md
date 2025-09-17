@@ -1,3 +1,10 @@
+## [2.6.1](https://github.com/Neovici/cfg/compare/v2.6.0...v2.6.1) (2025-09-17)
+
+
+### Bug Fixes
+
+* **automerge:** check only required jobs ([5f7f819](https://github.com/Neovici/cfg/commit/5f7f81937a6dbd9202455b5c0078692d3a8b18f2))
+
 # [2.6.0](https://github.com/Neovici/cfg/compare/v2.5.0...v2.6.0) (2025-09-17)
 
 
