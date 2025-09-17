@@ -1,3 +1,25 @@
+# [2.6.0](https://github.com/Neovici/cfg/compare/v2.5.0...v2.6.0) (2025-09-17)
+
+
+### Bug Fixes
+
+* add workflow_call ([886a86b](https://github.com/Neovici/cfg/commit/886a86b7971748f211ccd50eb6695fa403b129a5))
+* aprrove when semver-patch ([8d54f02](https://github.com/Neovici/cfg/commit/8d54f0296533ea250e8bc27a6108412d2240bd9c))
+* automerge filename a short one ([8fd3fc0](https://github.com/Neovici/cfg/commit/8fd3fc03a72d3bb7cdf708e146626ea8dfec0ab2))
+* **ci:** add new trigger ([9a0b74a](https://github.com/Neovici/cfg/commit/9a0b74a46afad4cb89b76a92545ac590c488732f))
+* **ci:** automerge env ([287dc13](https://github.com/Neovici/cfg/commit/287dc133f3d429745daee571b250fb91fc003836))
+* **ci:** automerge env ([7f58c91](https://github.com/Neovici/cfg/commit/7f58c91130f40dd1a4ed851bad3a72b3091ee2fc))
+* **ci:** automerge version ([5895c3e](https://github.com/Neovici/cfg/commit/5895c3eb5220e7310cf09dc6eec24dda99ca6c18))
+* **ci:** change woorkflow config ([829e82a](https://github.com/Neovici/cfg/commit/829e82a81f005f27f797322068dae0f45b522960))
+* the workflow wait the checks to start ([c349a7a](https://github.com/Neovici/cfg/commit/c349a7ac74e26e2f464ea491f83319b1a9107cde))
+* use node 24 ([3052212](https://github.com/Neovici/cfg/commit/3052212cd3284ce0575a08e47b0cc0e98988d2ea))
+* wait checks with gh ([45e69b5](https://github.com/Neovici/cfg/commit/45e69b5a9c319ff461f353ad22e9890530f31622))
+
+
+### Features
+
+* force release ([e15307e](https://github.com/Neovici/cfg/commit/e15307e0e81669cf4e4e3b75720259a342468b94))
+
 ## [2.5.1](https://github.com/Neovici/cfg/compare/v2.5.0...v2.5.1) (2025-09-17)
 
 
