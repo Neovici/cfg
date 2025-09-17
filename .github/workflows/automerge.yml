@@ -17,7 +17,7 @@ jobs:
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
       - name: Wait for PR checks to complete
-        run: gh pr checks --fail-fast --watch "$PR_URL"
+        run: gh pr checks --required --fail-fast --watch "$PR_URL"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Enable auto-approve
