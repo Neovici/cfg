@@ -1,3 +1,10 @@
+## [2.6.2](https://github.com/Neovici/cfg/compare/v2.6.1...v2.6.2) (2025-10-07)
+
+
+### Bug Fixes
+
+* **automerge:** wait until checks finish but not itself ([496c1a2](https://github.com/Neovici/cfg/commit/496c1a2e9fbca2cabdbd0dc2744af076f1ff5e22))
+
 ## [2.6.1](https://github.com/Neovici/cfg/compare/v2.6.0...v2.6.1) (2025-09-17)
 
 
