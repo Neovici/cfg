@@ -19,13 +19,15 @@ jobs:
       - name: Wait for PR checks to complete
         run: |
           while true; do
-            unfinished=$(gh pr checks --json workflow,name,state "$PR_URL" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs") | select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
+            checks=$(gh pr checks --json workflow,name,state "$PR_URL")
+            filtered_checks=$(echo "$checks" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs")')
+            unfinished=$(echo "$filtered_checks" | jq -r 'select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
             if [ -n "$unfinished" ]; then
               echo "Checks still running or failed:"
               echo "$unfinished"
               sleep 10
             else
-              passed=$(gh pr checks --json workflow,name,state "$PR_URL" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs") | .name + ": " + .state')
+              passed=$(echo "$filtered_checks" | jq -r '.name + ": " + .state')
               echo "All filtered checks passed:"
               echo "$passed"
               break
