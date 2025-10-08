@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  checks: read
 
 env:
   PR_URL: ${{github.event.pull_request.html_url}}
@@ -19,7 +20,10 @@ jobs:
       - name: Wait for PR checks to complete
         run: |
           while true; do
-            checks=$(gh pr checks --json workflow,name,state "$PR_URL")
+            if ! checks=$(gh pr checks --json workflow,name,state "$PR_URL"); then
+              echo "Failed to fetch checks"
+              exit 1
+            fi
             filtered_checks=$(echo "$checks" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs")')
             unfinished=$(echo "$filtered_checks" | jq -r 'select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
             if [ -n "$unfinished" ]; then
