@@ -1,3 +1,10 @@
+## [2.6.4](https://github.com/Neovici/cfg/compare/v2.6.3...v2.6.4) (2025-10-08)
+
+
+### Bug Fixes
+
+* permissions and checks exit code ([19397da](https://github.com/Neovici/cfg/commit/19397daef580e0dffe07147cb966ba0ca2837e8e))
+
 ## [2.6.3](https://github.com/Neovici/cfg/compare/v2.6.2...v2.6.3) (2025-10-08)
 
 
