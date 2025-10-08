@@ -1,3 +1,10 @@
+## [2.6.3](https://github.com/Neovici/cfg/compare/v2.6.2...v2.6.3) (2025-10-08)
+
+
+### Bug Fixes
+
+* **automerge:** deduplicate code ([a4bea01](https://github.com/Neovici/cfg/commit/a4bea01602e33eeb33270bf837b2611637cfc1af))
+
 ## [2.6.2](https://github.com/Neovici/cfg/compare/v2.6.1...v2.6.2) (2025-10-07)
 
 
