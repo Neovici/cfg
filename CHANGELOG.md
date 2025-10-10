@@ -1,3 +1,10 @@
+## [2.6.6](https://github.com/Neovici/cfg/compare/v2.6.5...v2.6.6) (2025-10-10)
+
+
+### Bug Fixes
+
+* conditionally secret token ([9fc8e97](https://github.com/Neovici/cfg/commit/9fc8e976b9d8212712f27d72cd3a91c913939a54))
+
 ## [2.6.5](https://github.com/Neovici/cfg/compare/v2.6.4...v2.6.5) (2025-10-10)
 
 
