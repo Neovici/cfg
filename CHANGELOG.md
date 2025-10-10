@@ -1,3 +1,10 @@
+## [2.6.7](https://github.com/Neovici/cfg/compare/v2.6.6...v2.6.7) (2025-10-10)
+
+
+### Bug Fixes
+
+* indentation ([107d9db](https://github.com/Neovici/cfg/commit/107d9db12e029612f8d524b51c81adecf9d76ade))
+
 ## [2.6.6](https://github.com/Neovici/cfg/compare/v2.6.5...v2.6.6) (2025-10-10)
 
 
