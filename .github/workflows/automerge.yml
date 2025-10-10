@@ -2,10 +2,10 @@ name: Auto Approve and Merge PRs
 
 on:
   pull_request:
-  workflow_call:
-    secrets:
-      token:
-        required: true
+workflow_call:
+  secrets:
+    token:
+      required: false
 
 permissions:
   contents: write
@@ -41,12 +41,12 @@ jobs:
             fi
           done
         env:
-          GH_TOKEN: ${{ secrets.token }}
+          GH_TOKEN: ${{ secrets.token || github.token }}
       - name: Enable auto-approve
         run: gh pr review --approve "$PR_URL"
         env:
-          GH_TOKEN: ${{ secrets.token }}
+          GH_TOKEN: ${{ secrets.token || github.token }}
       - name: Enable auto-merge
         run: gh pr merge --auto --merge "$PR_URL"
         env:
-          GH_TOKEN: ${{ secrets.token }}
+          GH_TOKEN: ${{ secrets.token || github.token }}
