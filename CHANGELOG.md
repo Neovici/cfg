@@ -1,3 +1,10 @@
+## [2.6.5](https://github.com/Neovici/cfg/compare/v2.6.4...v2.6.5) (2025-10-10)
+
+
+### Bug Fixes
+
+* automerge workflow ([e794eae](https://github.com/Neovici/cfg/commit/e794eae6223acaddeacafa7fc71e518f00a365f2))
+
 ## [2.6.4](https://github.com/Neovici/cfg/compare/v2.6.3...v2.6.4) (2025-10-08)
 
 
