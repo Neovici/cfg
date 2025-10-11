@@ -1,3 +1,10 @@
+## [2.6.8](https://github.com/Neovici/cfg/compare/v2.6.7...v2.6.8) (2025-10-11)
+
+
+### Bug Fixes
+
+* automerge stop if failure ([66300f9](https://github.com/Neovici/cfg/commit/66300f9ec4b0881f5e8a2f3cb136071c24f3d1f3))
+
 ## [2.6.7](https://github.com/Neovici/cfg/compare/v2.6.6...v2.6.7) (2025-10-10)
 
 
