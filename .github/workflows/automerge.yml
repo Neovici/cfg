@@ -28,14 +28,17 @@ jobs:
               exit 1
             fi
             filtered_checks=$(echo "$checks" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs")')
-            unfinished=$(echo "$filtered_checks" | jq -r 'select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
-            if [ -n "$unfinished" ]; then
-              echo "Checks still running or failed:"
-              echo "$unfinished"
+            failed=$(echo "$filtered_checks" | jq -r 'select(.state == "FAILURE") | .name + ": " + .state')
+            if [ -n "$failed" ]; then
+              echo "$failed"
+              exit 1
+            fi
+            running=$(echo "$filtered_checks" | jq -r 'select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
+            if [ -n "$running" ]; then
+              echo "$running"
               sleep 10
             else
               passed=$(echo "$filtered_checks" | jq -r '.name + ": " + .state')
-              echo "All filtered checks passed:"
               echo "$passed"
               break
             fi
