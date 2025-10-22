@@ -1,3 +1,15 @@
+# [2.7.0](https://github.com/Neovici/cfg/compare/v2.6.8...v2.7.0) (2025-10-22)
+
+
+### Bug Fixes
+
+* update mocha eslint import ([7c147de](https://github.com/Neovici/cfg/commit/7c147def87fc7607b9416fa2b2b7d57a0562faee))
+
+
+### Features
+
+* update dependencies ([f7bf189](https://github.com/Neovici/cfg/commit/f7bf18922f318d0cbb5f20ffb396cce520bb66a2))
+
 ## [2.6.8](https://github.com/Neovici/cfg/compare/v2.6.7...v2.6.8) (2025-10-11)
 
 
