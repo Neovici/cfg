@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/Neovici/cfg/compare/v2.7.0...v2.7.1) (2025-11-20)
+
+
+### Bug Fixes
+
+* semantic-release config ([f96db5f](https://github.com/Neovici/cfg/commit/f96db5f46d443f5a8b123a357ea2c2f36ae7dd19))
+
 # [2.7.0](https://github.com/Neovici/cfg/compare/v2.6.8...v2.7.0) (2025-10-22)
 
 
