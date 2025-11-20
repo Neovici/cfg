@@ -34,8 +34,7 @@
       "@semantic-release/github",
       "@semantic-release/npm",
       "@semantic-release/git"
-    ],
-    "branch": "master"
+    ]
   },
   "publishConfig": {
     "access": "public"
