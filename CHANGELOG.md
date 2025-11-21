@@ -1,3 +1,10 @@
+## [2.7.2](https://github.com/Neovici/cfg/compare/v2.7.1...v2.7.2) (2025-11-21)
+
+
+### Bug Fixes
+
+* **prettier:** plugin was not loading properly ([5d511fe](https://github.com/Neovici/cfg/commit/5d511fe5771630e615ee54792ef0fcac5ec2cdfd))
+
 ## [2.7.1](https://github.com/Neovici/cfg/compare/v2.7.0...v2.7.1) (2025-11-20)
 
 
