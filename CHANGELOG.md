@@ -1,3 +1,10 @@
+## [2.7.4](https://github.com/Neovici/cfg/compare/v2.7.3...v2.7.4) (2025-12-10)
+
+
+### Bug Fixes
+
+* retry running it from main.yml ([f8b8c06](https://github.com/Neovici/cfg/commit/f8b8c06600957d92325bb334f72154741469ed34))
+
 ## [2.7.3](https://github.com/Neovici/cfg/compare/v2.7.2...v2.7.3) (2025-12-10)
 
 
