@@ -14,5 +14,5 @@ permissions:
   id-token: write
 jobs:
   build:
-    uses: forge.yml
+    uses: Neovici/cfg/.github/workflows/forge.yml@master
     secrets: inherit
