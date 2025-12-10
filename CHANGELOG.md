@@ -1,3 +1,11 @@
+## [2.7.3](https://github.com/Neovici/cfg/compare/v2.7.2...v2.7.3) (2025-12-10)
+
+
+### Bug Fixes
+
+* try to run directly ([f4e37b8](https://github.com/Neovici/cfg/commit/f4e37b8a619a42def7fc51ace4a0fbd5dc107233))
+* update workflow to use Neovici's forge.yml ([329f3b6](https://github.com/Neovici/cfg/commit/329f3b6e2f761e9ac78b31612606eaeeb555fdb6))
+
 ## [2.7.2](https://github.com/Neovici/cfg/compare/v2.7.1...v2.7.2) (2025-11-21)
 
 
