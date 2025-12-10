@@ -1,3 +1,10 @@
+## [2.7.5](https://github.com/Neovici/cfg/compare/v2.7.4...v2.7.5) (2025-12-10)
+
+
+### Bug Fixes
+
+* cleanup unused permissions ([7daadb3](https://github.com/Neovici/cfg/commit/7daadb37287a0fbfca697f23a211da2233e52757))
+
 ## [2.7.4](https://github.com/Neovici/cfg/compare/v2.7.3...v2.7.4) (2025-12-10)
 
 
