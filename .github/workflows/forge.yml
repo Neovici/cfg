@@ -1,10 +1,6 @@
 name: Forge
 on:
   workflow_call:
-  push:
-    branches:
-      - beta
-      - master
 permissions:
   contents: write 
   issues: write
