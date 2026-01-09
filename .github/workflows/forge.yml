@@ -1,6 +1,10 @@
 name: Forge
 on:
   workflow_call:
+    secrets:
+      token:
+        description: 'app token or pat'
+        required: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -57,5 +61,5 @@ jobs:
         run: npx semantic-release
         if: success()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token || secrets.GITHUB_TOKEN }}
           HUSKY: 0
