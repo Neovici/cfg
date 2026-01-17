@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import tseslint, { configs } from 'typescript-eslint';
 
 export default tseslint.config({
 	files: ['**/*.+(ts|tsx)'],
-	extends: [tseslint.configs.recommended],
+	extends: [configs.recommended],
 	rules: {
 		'import/named': 'off',
 		'no-unused-vars': 'off',

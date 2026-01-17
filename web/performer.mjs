@@ -13,7 +13,6 @@ const perform = async (payload, context) => {
 
 export const performer = () => ({
 	name: 'cz-performer',
-	// eslint-disable-next-line max-statements
 	async executeCommand({ command, payload, session }) {
 		if (command !== 'cz-perform') return;
 		if (session.browser.type !== 'playwright') return;
