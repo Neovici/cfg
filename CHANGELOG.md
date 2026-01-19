@@ -1,3 +1,10 @@
+## [2.7.6](https://github.com/Neovici/cfg/compare/v2.7.5...v2.7.6) (2026-01-19)
+
+
+### Bug Fixes
+
+* grant permissions to actions features (workflows, runs) ([0e1cf6e](https://github.com/Neovici/cfg/commit/0e1cf6e7892f9d7c477ecaa5a4142d33dd815ad3))
+
 ## [2.7.5](https://github.com/Neovici/cfg/compare/v2.7.4...v2.7.5) (2025-12-10)
 
 
