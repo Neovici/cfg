@@ -13,6 +13,9 @@
   "license": "Apache-2.0",
   "author": "Neovici dev",
   "main": "index.js",
+  "bin": {
+    "check-duplicate-components": "./check-duplicate-components.mjs"
+  },
   "files": [
     "eslint/*.js",
     "eslint/*.mjs",
@@ -20,7 +23,8 @@
     "prettier/*.mjs",
     "web/*.js",
     "web/*.mjs",
-    "*.js"
+    "*.js",
+    "*.mjs"
   ],
   "scripts": {
     "lint": "eslint --cache .",
