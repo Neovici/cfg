@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/Neovici/cfg/compare/v2.7.6...v2.8.0) (2026-01-28)
+
+
+### Features
+
+* add duplicate web component detection ([#107](https://github.com/Neovici/cfg/issues/107)) ([0654a6d](https://github.com/Neovici/cfg/commit/0654a6da6425c3a1b2c043f1a4a859281a75df10))
+
 ## [2.7.6](https://github.com/Neovici/cfg/compare/v2.7.5...v2.7.6) (2026-01-19)
 
 
