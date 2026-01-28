@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/Neovici/cfg/compare/v2.8.0...v2.8.1) (2026-01-28)
+
+
+### Bug Fixes
+
+* detect transitive @playwright/test dependency for browser installation ([#108](https://github.com/Neovici/cfg/issues/108)) ([900b009](https://github.com/Neovici/cfg/commit/900b009d67c51ab0522c4ae7ea509e6b2d721eb0))
+
 # [2.8.0](https://github.com/Neovici/cfg/compare/v2.7.6...v2.8.0) (2026-01-28)
 
 
