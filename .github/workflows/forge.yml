@@ -38,10 +38,11 @@ jobs:
 
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(npm ls @playwright/test --depth=0 | grep @playwright/test | sed 's/.*@//')" >> $GITHUB_OUTPUT
+        run: echo "version=$(npm ls @playwright/test 2>/dev/null | grep @playwright/test | head -1 | sed 's/.*@playwright\/test@//')" >> $GITHUB_OUTPUT
 
       - name: Cache Playwright Browsers for Playwright's Version
         id: cache-playwright-browsers
+        if: steps.playwright-version.outputs.version != ''
         uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
@@ -49,7 +50,7 @@ jobs:
           restore-keys: ${{ runner.os }}-playwright-
 
       - name: Setup Playwright
-        if: steps.cache-playwright-browsers.outputs.cache-hit != 'true'
+        if: steps.playwright-version.outputs.version != '' && steps.cache-playwright-browsers.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
 
       - name: Test
