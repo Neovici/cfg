@@ -1,3 +1,10 @@
+## [2.8.2](https://github.com/Neovici/cfg/compare/v2.8.1...v2.8.2) (2026-02-17)
+
+
+### Bug Fixes
+
+* **ci:** use REST API for check polling in automerge ([#125](https://github.com/Neovici/cfg/issues/125)) ([7136cc4](https://github.com/Neovici/cfg/commit/7136cc4cfaa0a5fea1cf083f8c659671a48b7491))
+
 ## [2.8.1](https://github.com/Neovici/cfg/compare/v2.8.0...v2.8.1) (2026-01-28)
 
 
