@@ -27,23 +27,27 @@ jobs:
     steps:
       - name: Wait for PR checks to complete
         run: |
+          sha=$(gh pr view "$PR_URL" --json headRefOid -q .headRefOid)
           while true; do
-            if ! checks=$(gh pr checks --json workflow,name,state "$PR_URL"); then
-              echo "Failed to fetch checks"
-              exit 1
+            checks=$(gh api "repos/{owner}/{repo}/commits/$sha/check-runs" --paginate -q \
+              '[.check_runs[] | {name: .name, status: .status, conclusion: .conclusion}]')
+            filtered=$(echo "$checks" | jq '[.[] | select(.name != "auto-approve-and-merge")]')
+            if [ "$(echo "$filtered" | jq length)" -eq 0 ]; then
+              echo "Waiting for checks to appear..."
+              sleep 10
+              continue
             fi
-            filtered_checks=$(echo "$checks" | jq -r '.[] | select(.workflow != "Auto Approve and Merge PRs")')
-            failed=$(echo "$filtered_checks" | jq -r 'select(.state == "FAILURE") | .name + ": " + .state')
+            failed=$(echo "$filtered" | jq -r '.[] | select(.conclusion == "failure") | .name + ": failure"')
             if [ -n "$failed" ]; then
               echo "$failed"
               exit 1
             fi
-            running=$(echo "$filtered_checks" | jq -r 'select(.state != "SUCCESS" and .state != "SKIPPED") | .name + ": " + .state')
+            running=$(echo "$filtered" | jq -r '.[] | select(.status != "completed") | .name + ": " + .status')
             if [ -n "$running" ]; then
               echo "$running"
               sleep 10
             else
-              passed=$(echo "$filtered_checks" | jq -r '.name + ": " + .state')
+              passed=$(echo "$filtered" | jq -r '.[] | .name + ": " + .conclusion')
               echo "$passed"
               break
             fi
