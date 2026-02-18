@@ -1,3 +1,10 @@
+## [2.8.3](https://github.com/Neovici/cfg/compare/v2.8.2...v2.8.3) (2026-02-18)
+
+
+### Bug Fixes
+
+* **ci:** use GITHUB_REPOSITORY in REST API path and add merge-method input ([#126](https://github.com/Neovici/cfg/issues/126)) ([40cee8d](https://github.com/Neovici/cfg/commit/40cee8dfcb969f906fce2eeb0e012ed5956f4537))
+
 ## [2.8.2](https://github.com/Neovici/cfg/compare/v2.8.1...v2.8.2) (2026-02-17)
 
 
