@@ -34,7 +34,7 @@ jobs:
           while true; do
             checks=$(gh api "repos/$GITHUB_REPOSITORY/commits/$sha/check-runs" --paginate -q \
               '[.check_runs[] | {name: .name, status: .status, conclusion: .conclusion}]')
-            filtered=$(echo "$checks" | jq '[.[] | select(.name != "auto-approve-and-merge")]')
+            filtered=$(echo "$checks" | jq '[.[] | select(.name | contains("auto-approve-and-merge") | not)]')
             if [ "$(echo "$filtered" | jq length)" -eq 0 ]; then
               echo "Waiting for checks to appear..."
               sleep 10
