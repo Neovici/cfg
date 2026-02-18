@@ -1,3 +1,10 @@
+## [2.8.4](https://github.com/Neovici/cfg/compare/v2.8.3...v2.8.4) (2026-02-18)
+
+
+### Bug Fixes
+
+* **ci:** filter automerge job by substring match ([#127](https://github.com/Neovici/cfg/issues/127)) ([4a79ff9](https://github.com/Neovici/cfg/commit/4a79ff981a5502bc36214e550f475123a6f67e6d))
+
 ## [2.8.3](https://github.com/Neovici/cfg/compare/v2.8.2...v2.8.3) (2026-02-18)
 
 
