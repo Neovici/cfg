@@ -1,18 +1,28 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
 /**
- * Check for duplicate @neovici/cosmoz-* web components in package-lock.json
+ * Check for duplicate singleton packages in package-lock.json
  *
- * Web components register themselves globally via customElements.define().
- * Having multiple versions of the same component causes runtime errors
- * because the second version fails to register with the same tag name.
+ * Some packages must only exist as a single copy in the dependency tree:
+ * - @neovici/cosmoz-* web components register globally via customElements.define()
+ * - @pionjs/pion manages component lifecycle and scheduler state
+ * - lit-html and lit maintain internal template caches and reactive internals
+ * - i18next maintains a singleton translation context
+ *
+ * Having multiple versions of these packages causes runtime conflicts and errors.
  */
 
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const LOCKFILE = 'package-lock.json',
-	PACKAGE_PATTERN = /^@neovici\/cosmoz-/u,
+	PACKAGE_PATTERNS = [
+		/^@neovici\/cosmoz-/u,
+		/^@pionjs\/pion$/u,
+		/^lit-html$/u,
+		/^lit$/u,
+		/^i18next$/u,
+	],
 	PACKAGE_NAME_PATTERN = /node_modules\/(@[^/]+\/[^/]+|[^/]+)$/u;
 
 const readLockfile = (lockfilePath) => {
@@ -43,7 +53,8 @@ const collectComponentVersions = (packages) => {
 		if (!path.startsWith('node_modules/')) continue;
 
 		const packageName = extractPackageName(path);
-		if (!packageName || !PACKAGE_PATTERN.test(packageName)) continue;
+		if (!packageName || !PACKAGE_PATTERNS.some((p) => p.test(packageName)))
+			continue;
 
 		const { version } = info;
 		if (!version) continue;
@@ -66,8 +77,8 @@ const findDuplicates = (componentVersions) =>
 		.map(([packageName, instances]) => ({ packageName, instances }));
 
 const printDuplicates = (duplicates) => {
-	console.error('ERROR: Duplicate web components detected!\n');
-	console.error('Web components register themselves globally. Having multiple');
+	console.error('ERROR: Duplicate singleton packages detected!\n');
+	console.error('These packages must exist as a single copy. Having multiple');
 	console.error('versions will cause runtime conflicts and errors.\n');
 
 	for (const { packageName, instances } of duplicates) {
@@ -79,7 +90,7 @@ const printDuplicates = (duplicates) => {
 	}
 
 	console.error('Fix: Update your dependencies to ensure all packages use');
-	console.error('compatible version ranges of web components.\n');
+	console.error('compatible version ranges, or add overrides to package.json.\n');
 	console.error('Run `npm ls <package-name>` to see the dependency tree');
 	console.error('and identify which packages need updating.');
 };
@@ -91,7 +102,7 @@ const main = () => {
 		duplicates = findDuplicates(componentVersions);
 
 	if (duplicates.length === 0) {
-		console.log('✓ No duplicate web components found');
+		console.log('✓ No duplicate singleton packages found');
 		process.exit(0);
 	}
 
