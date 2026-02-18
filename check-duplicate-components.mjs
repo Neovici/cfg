@@ -53,8 +53,9 @@ const collectComponentVersions = (packages) => {
 		if (!path.startsWith('node_modules/')) continue;
 
 		const packageName = extractPackageName(path);
-		if (!packageName || !PACKAGE_PATTERNS.some((p) => p.test(packageName)))
+		if (!packageName || !PACKAGE_PATTERNS.some((p) => p.test(packageName))) {
 			continue;
+		}
 
 		const { version } = info;
 		if (!version) continue;
