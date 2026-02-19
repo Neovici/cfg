@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/Neovici/cfg/compare/v2.8.4...v2.9.0) (2026-02-19)
+
+
+### Features
+
+* check additional singleton packages for duplicates ([#128](https://github.com/Neovici/cfg/issues/128)) ([d15b1ad](https://github.com/Neovici/cfg/commit/d15b1ad031256136ab5b70d8784985861a557c03))
+
 ## [2.8.4](https://github.com/Neovici/cfg/compare/v2.8.3...v2.8.4) (2026-02-18)
 
 
