@@ -4,9 +4,9 @@ on:
   pull_request:
   workflow_call:
     inputs:
-      allowed-user:
+      allowed-users:
         type: string
-        default: 'dependabot[bot]'
+        default: '["dependabot[bot]"]'
       merge-method:
         type: string
         default: '--merge'
@@ -26,7 +26,7 @@ env:
 jobs:
   auto-approve-and-merge:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == (inputs.allowed-user || 'dependabot[bot]')
+    if: contains(fromJSON(inputs.allowed-users || '["dependabot[bot]"]'), github.event.pull_request.user.login)
     steps:
       - name: Wait for PR checks to complete
         run: |
