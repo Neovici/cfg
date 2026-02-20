@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/Neovici/cfg/compare/v2.9.0...v2.10.0) (2026-02-20)
+
+
+### Features
+
+* **ci:** support multiple allowed users in automerge workflow ([#130](https://github.com/Neovici/cfg/issues/130)) ([cb0e08f](https://github.com/Neovici/cfg/commit/cb0e08fa5f71b5091d3807a12cd36da07e765421))
+
 # [2.9.0](https://github.com/Neovici/cfg/compare/v2.8.4...v2.9.0) (2026-02-19)
 
 
