@@ -1,3 +1,10 @@
+## [2.10.1](https://github.com/Neovici/cfg/compare/v2.10.0...v2.10.1) (2026-02-23)
+
+
+### Bug Fixes
+
+* remove duplicate components check step ([#132](https://github.com/Neovici/cfg/issues/132)) ([e3bca98](https://github.com/Neovici/cfg/commit/e3bca985de30c911c74d4823335366edbc0c6d1e))
+
 # [2.10.0](https://github.com/Neovici/cfg/compare/v2.9.0...v2.10.0) (2026-02-20)
 
 
