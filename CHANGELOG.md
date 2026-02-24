@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/Neovici/cfg/compare/v2.10.1...v2.11.0) (2026-02-24)
+
+
+### Features
+
+* enable ! breaking change indicator support in semantic-release ([#133](https://github.com/Neovici/cfg/issues/133)) ([150749d](https://github.com/Neovici/cfg/commit/150749ddcdc0bda584f47fff6596d841f23bd79f))
+
 ## [2.10.1](https://github.com/Neovici/cfg/compare/v2.10.0...v2.10.1) (2026-02-23)
 
 
