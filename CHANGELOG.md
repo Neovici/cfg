@@ -1,3 +1,10 @@
+## [2.11.1](https://github.com/Neovici/cfg/compare/v2.11.0...v2.11.1) (2026-04-01)
+
+
+### Bug Fixes
+
+* **workflows:** skip preview deployments for Dependabot PRs ([#157](https://github.com/Neovici/cfg/issues/157)) ([2c16a9d](https://github.com/Neovici/cfg/commit/2c16a9db46ad7dd2c69e670388a872dac97f296d))
+
 # [2.11.0](https://github.com/Neovici/cfg/compare/v2.10.1...v2.11.0) (2026-02-24)
 
 
