@@ -9,11 +9,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775767670,
-        "narHash": "sha256-If/AIP2wWA/P+7pm606JxHV7pcYU0vsiwCAjZzYtrSk=",
+        "lastModified": 1775939535,
+        "narHash": "sha256-Zq1U7Vhw5ctvhJQy+3ShqIv7Mplf3XkgJY+QJnhfUGQ=",
         "owner": "tadfisher",
         "repo": "android-nixpkgs",
-        "rev": "31b73cde2e551fc2ba1744d71d765b5232a4f32b",
+        "rev": "d2e16192309bf3101e4998ffa62e914819dee077",
         "type": "github"
       },
       "original": {
