@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/Neovici/cfg/compare/v2.11.1...v2.12.0) (2026-05-20)
+
+
+### Features
+
+* add foundry reusable workflow with changesets ([#194](https://github.com/Neovici/cfg/issues/194)) ([427477b](https://github.com/Neovici/cfg/commit/427477bd6cb4dfb86e9cf7d0e3a7a276e71271eb))
+
 ## [2.11.1](https://github.com/Neovici/cfg/compare/v2.11.0...v2.11.1) (2026-04-01)
 
 
