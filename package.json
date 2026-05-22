@@ -28,22 +28,8 @@
   ],
   "scripts": {
     "lint": "eslint --cache .",
-    "prepare": "husky"
-  },
-  "release": {
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "conventionalcommits"
-        }
-      ],
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ]
+    "prepare": "husky",
+    "changeset": "changeset"
   },
   "publishConfig": {
     "access": "public"
@@ -76,11 +62,9 @@
     "typescript-eslint": "^8.53.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@commitlint/cli": "^21.0.1",
     "@commitlint/config-conventional": "^21.0.1",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
-    "husky": "^9.0.0",
-    "semantic-release": "^25.0.0"
+    "husky": "^9.0.0"
   }
 }
