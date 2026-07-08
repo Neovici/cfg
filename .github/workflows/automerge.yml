@@ -9,7 +9,7 @@ on:
         default: '["dependabot[bot]"]'
       merge-method:
         type: string
-        default: '--merge'
+        default: '--squash'
     secrets:
       token:
         required: false
