@@ -1,3 +1,8 @@
+node_modules
+.eslintcache
+.direnv
+.envrc
+
 # Codecov uploader artifacts (downloaded by codecov-action to repo root)
 codecov
 codecov.SHA256SUM
