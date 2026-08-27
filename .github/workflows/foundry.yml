@@ -54,7 +54,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Create Release Pull Request or Publish
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         if: success() && github.event_name == 'push' && github.repository_owner == 'neovici'
         with:
           publish: npm run changeset publish
