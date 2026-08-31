@@ -1,5 +1,11 @@
 # [2.12.0](https://github.com/Neovici/cfg/compare/v2.11.1...v2.12.0) (2026-05-20)
 
+## 2.13.1
+
+### Patch Changes
+
+- a19f56b: Fix changesets/action v2 input names in foundry workflow: `publish` → `publish-script`, `commit` → `commit-message`, `title` → `pr-title`. Restores the "Create Release Pull Request or Publish" step for cfg and all repos consuming `foundry.yml@master`. Fixes FE-1114
+
 ## 2.13.0
 
 ### Minor Changes
