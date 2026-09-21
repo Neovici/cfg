@@ -37,13 +37,17 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright
+          # Key on the driver's own browser manifest: changes iff the revisions
+          # import('playwright') will download change. Content-based, immune to
+          # bin-link vs ESM-resolution version skew.
+          key: ${{ runner.os }}-playwright-${{ hashFiles('node_modules/playwright-core/browsers.json') }}
           restore-keys: ${{ runner.os }}-playwright-
 
       # Idempotent: downloads only browsers missing from the (possibly stale)
-      # cache, so a version-keyed cache can never drift from the driver that
+      # cache, so a hash-keyed cache can never drift from the driver that
       # import('playwright') resolves at test time.
       - name: Setup Playwright
+        if: hashFiles('node_modules/playwright-core/browsers.json') != ''
         run: npx playwright install --with-deps
 
       - name: Test
