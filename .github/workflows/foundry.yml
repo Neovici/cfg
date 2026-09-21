@@ -33,18 +33,22 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
-          # Key on the driver's own browser manifest: changes iff the revisions
-          # import('playwright') will download change. Content-based, immune to
-          # bin-link vs ESM-resolution version skew.
-          key: ${{ runner.os }}-playwright-${{ hashFiles('node_modules/playwright-core/browsers.json') }}
+          # Hash of EVERY playwright-core manifest in the tree (root + nested
+          # copies): key changes iff any copy's required revisions change.
+          key: ${{ runner.os }}-playwright-${{ hashFiles('node_modules/**/playwright-core/browsers.json') }}
           restore-keys: ${{ runner.os }}-playwright-
 
-      # Idempotent: downloads only browsers missing from the (possibly stale)
-      # cache, so a hash-keyed cache can never drift from the driver that
-      # import('playwright') resolves at test time.
+      # A tree can hold multiple playwright copies (e.g. @playwright/test pins
+      # its own nested one while another dep hoists a newer root). Bin links
+      # and ESM resolution may each land on a different copy, so install
+      # browsers for every copy. Idempotent: downloads only what's missing.
       - name: Setup Playwright
-        if: hashFiles('node_modules/playwright-core/browsers.json') != ''
-        run: npx playwright install --with-deps
+        if: hashFiles('node_modules/**/playwright-core/browsers.json') != ''
+        run: |
+          find node_modules -path '*playwright-core/cli.js' | while read -r cli; do
+            echo "Installing browsers for $cli"
+            node "$cli" install --with-deps
+          done
 
       - name: Test
         run: npm test --if-present
