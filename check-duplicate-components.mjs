@@ -10,6 +10,9 @@
  * - i18next maintains a singleton translation context
  *
  * Having multiple versions of these packages causes runtime conflicts and errors.
+ * Only runtime dependencies are checked: packages flagged `dev` in the
+ * lockfile are reachable exclusively via devDependencies and never ship
+ * in a consumer's tree, so duplicates among them cannot conflict at runtime.
  */
 
 import { readFileSync, existsSync } from 'fs';
@@ -51,6 +54,9 @@ const collectComponentVersions = (packages) => {
 
 	for (const [path, info] of Object.entries(packages)) {
 		if (!path.startsWith('node_modules/')) continue;
+
+		// Dev-only packages never ship in a consumer's tree.
+		if (info.dev === true) continue;
 
 		const packageName = extractPackageName(path);
 		if (!packageName || !PACKAGE_PATTERNS.some((p) => p.test(packageName))) {
