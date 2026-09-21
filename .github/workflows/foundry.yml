@@ -31,7 +31,12 @@ jobs:
 
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(npm ls @playwright/test 2>/dev/null | grep @playwright/test | head -1 | sed 's/.*@playwright\/test@//')" >> $GITHUB_OUTPUT
+        run: |
+          version=$(npx playwright --version 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+          if [ -z "$version" ]; then
+            version=$(npm ls @playwright/test 2>/dev/null | grep @playwright/test | head -1 | sed 's/.*@playwright\/test@//')
+          fi
+          echo "version=$version" >> $GITHUB_OUTPUT
 
       - name: Cache Playwright Browsers for Playwright's Version
         id: cache-playwright-browsers
