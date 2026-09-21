@@ -1,5 +1,21 @@
 # [2.12.0](https://github.com/Neovici/cfg/compare/v2.11.1...v2.12.0) (2026-05-20)
 
+## 2.14.0
+
+### Minor Changes
+
+- 4f408f4: feat: only check runtime dependencies for duplicates
+
+  `check-duplicate-components` now skips lockfile packages flagged `dev`.
+  npm marks an entry `dev: true` only when it's reachable exclusively via
+  devDependencies — such packages never ship in a consumer's tree, so
+  duplicates among them cannot cause runtime
+  `customElements.define` conflicts.
+
+  Runtime dependencies keep the full strictness: any package reachable
+  through non-dev edges is still validated, including nested copies
+  caused by range conflicts between runtime deps.
+
 ## 2.13.1
 
 ### Patch Changes
