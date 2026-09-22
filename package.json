@@ -23,6 +23,8 @@
     "prettier/*.mjs",
     "web/*.js",
     "web/*.mjs",
+    "storybook/*.js",
+    "storybook/*.mjs",
     "*.js",
     "*.mjs"
   ],
