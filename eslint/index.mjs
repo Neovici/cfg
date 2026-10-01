@@ -35,6 +35,7 @@ export default [
 			'func-names': ['error', 'never'],
 			'func-style': ['error', 'expression'],
 			'guard-for-in': 'error',
+			'import/no-duplicates': 'error',
 			'import/no-extraneous-dependencies': 'warn',
 			'max-depth': ['error', 4],
 			'max-len': [
@@ -74,7 +75,6 @@ export default [
 			'no-bitwise': 'error',
 			'no-const-assign': 'error',
 			'no-dupe-class-members': 'error',
-			'no-duplicate-imports': 'error',
 			'no-else-return': 'error',
 			'no-empty': 'error',
 			'no-empty-function': 'error',
