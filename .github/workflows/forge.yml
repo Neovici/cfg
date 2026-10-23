@@ -52,7 +52,12 @@ jobs:
       # browsers for every copy. Idempotent: downloads only what's missing.
       - name: Setup Playwright
         if: hashFiles('node_modules/**/playwright-core/browsers.json') != ''
+        timeout-minutes: 10
         run: |
+          # Avoid slow package downloads from the runner's Azure Ubuntu mirror.
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
           find node_modules -path '*playwright-core/cli.js' | while read -r cli; do
             echo "Installing browsers for $cli"
             node "$cli" install --with-deps
