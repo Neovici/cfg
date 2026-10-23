@@ -14,5 +14,5 @@ permissions:
   id-token: write
 jobs:
   build:
-    uses: Neovici/cfg/.github/workflows/foundry.yml@master
+    uses: ./.github/workflows/foundry.yml
     secrets: inherit
