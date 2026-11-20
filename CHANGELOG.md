@@ -1,5 +1,11 @@
 # [2.12.0](https://github.com/Neovici/cfg/compare/v2.11.1...v2.12.0) (2026-05-20)
 
+## 2.15.3
+
+### Patch Changes
+
+- f769735: Pin the GitHub-hosted jobs in the reusable workflows to Ubuntu 24.04.
+
 ## 2.15.2
 
 ### Patch Changes
