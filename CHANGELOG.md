@@ -1,5 +1,11 @@
 # [2.12.0](https://github.com/Neovici/cfg/compare/v2.11.1...v2.12.0) (2026-05-20)
 
+## 2.15.2
+
+### Patch Changes
+
+- c1056ce: Run the reusable CI workflows on Node.js 26.
+
 ## 2.15.1
 
 ### Patch Changes
