@@ -25,7 +25,7 @@ env:
 
 jobs:
   auto-approve-and-merge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: contains(fromJSON(inputs.allowed-users || '["dependabot[bot]"]'), github.event.pull_request.user.login)
     steps:
       - name: Wait for PR checks to complete
