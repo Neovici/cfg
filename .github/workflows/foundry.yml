@@ -46,9 +46,9 @@ jobs:
         if: hashFiles('node_modules/**/playwright-core/browsers.json') != ''
         timeout-minutes: 10
         run: |
-          # Avoid slow package downloads from the runner's Azure Ubuntu mirror.
+          # Hosted runners ship a cloud-local Ubuntu mirror (Azure or AWS) that can stall for minutes per package.
           if [ -f /etc/apt/apt-mirrors.txt ]; then
-            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+            echo 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt
           fi
           find node_modules -path '*playwright-core/cli.js' | while read -r cli; do
             echo "Installing browsers for $cli"
